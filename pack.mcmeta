@@ -47,63 +47,59 @@
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/wells",
+			"path": "worldgen/structure_set/beach_bar.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/beach_bar.json",
+			"path": "worldgen/structure_set/cartographer_tower.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/cartographer_tower.json",
+			"path": "worldgen/structure_set/cathedral.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/cathedral.json",
+			"path": "worldgen/structure_set/crystal.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/crystal.json",
+			"path": "worldgen/structure_set/horse_pen.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/horse_pen.json",
+			"path": "worldgen/structure_set/houses/large_floating_island.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/houses/large_floating_island.json",
+			"path": "worldgen/structure_set/houses/large_warped_tower.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/houses/large_warped_tower.json",
+			"path": "worldgen/structure_set/jungle_tower.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/jungle_tower.json",
+			"path": "worldgen/structure_set/out_house.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/out_house.json",
+			"path": "worldgen/structure_set/railway.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/railway.json",
+			"path": "worldgen/structure_set/shed.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/shed.json",
+			"path": "worldgen/structure_set/small_ship.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/small_ship.json",
+			"path": "worldgen/structure_set/stone_fountain.json"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/stone_fountain.json",
-		},
-		{
-			"namespace": "mvs",
-			"path": "worldgen/structure_set/sunzi_gate.json",
+			"path": "worldgen/structure_set/sunzi_gate.json"
 		},
 		{
 			"namespace": "totw_reworked",
