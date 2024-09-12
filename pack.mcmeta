@@ -10,7 +10,7 @@
 		  "path": "advancements/grant_book_on_first_join.json"
 		},
 		{
-			"namespace": "hybrid-aquatic"
+			"namespace": "hybrid-aquatic",
 			"path":"hybrid-aquatic/sea_message"
 		}
 	  ]
