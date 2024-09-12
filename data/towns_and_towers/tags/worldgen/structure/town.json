@@ -1,11 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:village_desert",
-    "minecraft:village_plains",
-    "minecraft:village_savanna",
-    "minecraft:village_snowy",
-    "minecraft:village_taiga",
     "towns_and_towers:village_badlands",
     "towns_and_towers:village_beach",
     "towns_and_towers:village_birch_forest",
@@ -23,7 +18,6 @@
     "towns_and_towers:village_sunflower_plains",
     "towns_and_towers:village_snowy_taiga",
     "towns_and_towers:village_swamp",
-    "towns_and_towers:village_wooded_badlands",
-    "nova_structures:village_jungle"
+    "towns_and_towers:village_wooded_badlands"
   ]
 }
