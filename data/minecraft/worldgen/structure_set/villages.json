@@ -87,10 +87,6 @@
       "weight": 1
     },
     {
-      "structure": "towns_and_towers:exclusives/village_piglin",
-      "weight": 1
-    },
-    {
       "structure": "nova_structures:village_jungle",
       "weight": 1
     }
