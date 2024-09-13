@@ -5,18 +5,18 @@
             "weight": 2,
             "element": {
                 "element_type": "minecraft:single_pool_element",
-                "projection": "terrain_matching",
+                "projection": "rigid",
                 "location": "minecraft:sunken_ship",
-                "processors": "minecraft:empty"
+                "processors": "minecraft:ship_graveyard_chest_swap"
             }
         },
         {
             "weight": 2,
             "element": {
                 "element_type": "minecraft:single_pool_element",
-                "projection": "terrain_matching",
+                "projection": "rigid",
                 "location": "minecraft:sunken_ship2",
-                "processors": "minecraft:empty"
+                "processors": "minecraft:ship_graveyard_chest_swap"
             }
         },
         {
