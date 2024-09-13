@@ -1,0 +1,22 @@
+{
+    "structures": [
+      {
+        "structure": "minecraft:ship_graveyard",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1637384660,
+      "frequency_reduction_method": "default",
+      "frequency": 1,
+      "exclusion_zone": {
+        "other_set": "minecraft:shipwrecks",
+        "chunk_count": 4
+      },
+      "spread_type": "linear",
+      "spacing": 20,
+      "separation": 10
+    }
+  }
+  
