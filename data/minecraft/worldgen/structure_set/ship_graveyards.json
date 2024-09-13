@@ -14,9 +14,9 @@
         "other_set": "minecraft:shipwrecks",
         "chunk_count": 4
       },
-      "spread_type": "linear",
-      "spacing": 20,
-      "separation": 10
+      "spread_type": "triangular",
+      "spacing": 60,
+      "separation": 20
     }
   }
   

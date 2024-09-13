@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:is_ocean",
+  "biomes": "#minecraft:has_structure/ship_graveyard",
   "step": "surface_structures",
   "spawn_overrides": {
     "water_creature": {
