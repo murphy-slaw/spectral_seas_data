@@ -1,94 +1,118 @@
 {
-    "processors": [
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
         {
-            "processor_type": "minecraft:rule",
-            "rules": [
-                {
-                    "location_predicate": {
-                        "predicate_type": "minecraft:always_true"
-                    },
-                    "input_predicate": {
-                        "predicate_type": "minecraft:random_block_match",
-                        "block": "minecraft:chest",
-                        "probability": 0.5
-                    },
-                    "output_state": {
-                        "Name": "minecraft:structure_void"
-                    }
-                },
-                {
-                    "location_predicate": {
-                        "predicate_type": "minecraft:always_true"
-                    },
-                    "input_predicate": {
-                        "predicate_type": "minecraft:blockstate_match",
-                        "block_state": {
-                            "Name": "minecraft:chest",
-                            "Properties": {
-                                "facing": "north"
-                            }
-                        }
-                    },
-                    "output_state": {
-                        "Name": "minecraft:chest",
-                        "Properties": {
-                            "facing": "north"
-                        }
-                    },
-                    "block_entity_modifier": {
-                        "type": "minecraft:append_loot",
-                        "loot_table": "minecraft:chests/stronghold_library"
-                    }
-                },
-                {
-                    "location_predicate": {
-                        "predicate_type": "minecraft:always_true"
-                    },
-                    "input_predicate": {
-                        "predicate_type": "minecraft:blockstate_match",
-                        "block_state": {
-                            "Name": "minecraft:chest",
-                            "Properties": {
-                                "facing": "south"
-                            }
-                        }
-                    },
-                    "output_state": {
-                        "Name": "minecraft:chest",
-                        "Properties": {
-                            "facing": "south"
-                        }
-                    },
-                    "block_entity_modifier": {
-                        "type": "minecraft:append_loot",
-                        "loot_table": "minecraft:chests/stronghold_library"
-                    }
-                },
-                {
-                    "location_predicate": {
-                        "predicate_type": "minecraft:always_true"
-                    },
-                    "input_predicate": {
-                        "predicate_type": "minecraft:blockstate_match",
-                        "block_state": {
-                            "Name": "minecraft:chest",
-                            "Properties": {
-                                "facing": "east"
-                            }
-                        }
-                    },
-                    "output_state": {
-                        "Name": "minecraft:chest",
-                        "Properties": {
-                            "facing": "east"
-                        }
-                    },
-                    "block_entity_modifier": {
-                        "type": "minecraft:append_loot",
-                        "loot_table": "minecraft:chests/stronghold_library"
-                    }
-                }
-            ]
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:chest",
+            "probability": 0.5
+          },
+          "output_state": {
+            "Name": "minecraft:structure_void"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:chest",
+              "Properties": {
+                "facing": "north"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:chest",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "minecraft:chests/stronghold_library"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:chest",
+              "Properties": {
+                "facing": "south"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:chest",
+            "Properties": {
+              "facing": "south"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "minecraft:chests/stronghold_library"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:chest",
+              "Properties": {
+                "facing": "east"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:chest",
+            "Properties": {
+              "facing": "east"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "minecraft:chests/stronghold_library"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:chest",
+              "Properties": {
+                "facing": "east"
+              }
+            }
+          },
+          "output_state": {
+            "Name": "minecraft:chest",
+            "Properties": {
+              "facing": "east"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "minecraft:chests/stronghold_library"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
