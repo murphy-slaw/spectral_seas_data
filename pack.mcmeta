@@ -110,8 +110,52 @@
 			"path": "worldgen/structure/exclusives"
 		},
 		{
+			"namespace": "towns_and_towers",
+			"path": "worldgen/structure_set/towns.json"
+		},
+		{
 			"namespace": "kaisyn",
 			"path": "structures/village/exclusives"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/desert_ruins.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/firewatch_towers.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/illager_camp.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/jungle_ruins.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/jungle_ruins.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/stray_fort.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/villages_jungle.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/villages_swamp.json"
+		},
+		{
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/villages_swamp.json"
+		},
+		{
+			"namespace": "witch_villa",
+			"path": "worldgen/structure_set/villages_swamp.json"
 		}
 	  ]
 	}

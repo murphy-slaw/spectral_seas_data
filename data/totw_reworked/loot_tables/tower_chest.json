@@ -111,7 +111,10 @@
                 },
                 {
                   "function": "minecraft:set_name",
-                  "name": "Tower Map"
+                  "name": {
+                    "text": "Tower Map",
+                    "color": "#41816a"
+                  }
                 }
               ],
               "conditions": [
@@ -137,7 +140,10 @@
                 },
                 {
                   "function": "minecraft:set_name",
-                  "name": "Tower Map"
+                  "name": {
+                    "text": "Tower Map",
+                    "color": "#41816a"
+                  }
                 }
               ],
               "conditions": [
@@ -163,7 +169,10 @@
                 },
                 {
                   "function": "minecraft:set_name",
-                  "name": "Tower Map"
+                  "name": {
+                    "text": "Tower Map",
+                    "color": "#41816a"
+                  }
                 }
               ],
               "conditions": [
@@ -189,7 +198,10 @@
                 },
                 {
                   "function": "minecraft:set_name",
-                  "name": "Tower Map"
+                  "name": {
+                    "text": "Tower Map",
+                    "color": "#41816a"
+                  }
                 }
               ],
               "conditions": [
@@ -215,7 +227,10 @@
                 },
                 {
                   "function": "minecraft:set_name",
-                  "name": "Tower Map"
+                  "name": {
+                    "text": "Tower Map",
+                    "color": "#41816a"
+                  }
                 }
               ],
               "conditions": [
