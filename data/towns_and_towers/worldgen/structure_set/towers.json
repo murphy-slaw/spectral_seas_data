@@ -98,7 +98,7 @@
     "type": "minecraft:random_spread",
     "exclusion_zone": {
       "chunk_count": 5,
-      "other_set": "towns_and_towers:towns"
+      "other_set": "minecraft:villages"
     }
   }
 }
