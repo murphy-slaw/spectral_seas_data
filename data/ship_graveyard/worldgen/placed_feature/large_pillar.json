@@ -1,5 +1,5 @@
 {
-	"feature": "geophilic:biome_specific/stony_shore/pillar/large",
+	"feature": "ship_graveyard:large_pillar",
 	"placement": [
 		{
 			"type": "minecraft:noise_based_count",
