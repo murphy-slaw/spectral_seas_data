@@ -8,19 +8,19 @@
       "spawns": [
         {
           "type": "hybrid-aquatic:great_white_shark",
-          "weight": 5,
+          "weight": 1,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "type": "hybrid-aquatic:bull_shark",
-          "weight": 5,
+          "weight": 1,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "type": "hybrid-aquatic:tiger_shark",
-          "weight": 5,
+          "weight": 1,
           "minCount": 1,
           "maxCount": 1
         }
