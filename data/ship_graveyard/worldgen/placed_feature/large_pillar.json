@@ -2,14 +2,6 @@
 	"feature": "ship_graveyard:large_pillar",
 	"placement": [
 		{
-			"type": "minecraft:noise_based_count",
-			"noise_to_count_ratio": 2,
-			"noise_factor": 32
-		},
-		{
-			"type": "minecraft:in_square"
-		},
-		{
 			"type": "minecraft:heightmap",
 			"heightmap": "OCEAN_FLOOR"
 		}

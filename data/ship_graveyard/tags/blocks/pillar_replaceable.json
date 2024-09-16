@@ -1,0 +1,13 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:azalea_root_replaceable",
+        "minecraft:grass",
+        "minecraft:tall_grass",
+        "minecraft:kelp",
+        "minecraft:kelp_plant",
+        "minecraft:seagrass",
+        "minecraft:tall_seagrass",
+        "minecraft:water"
+    ]
+}
