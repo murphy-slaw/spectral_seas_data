@@ -4,10 +4,9 @@
         {
             "weight": 1,
             "element":{
-                "element_type":"minecraft:single_pool_element",
-                "projection":"terrain_matching",
-                "processors":"minecraft:empty",
-                "location":"ship_graveyard:starts/start1"
+                "element_type": "feature_pool_element",
+                "feature": "ship_graveyard:large_pillar",
+                "projection": "terrain_matching"
             }
         }
     ]
