@@ -7,13 +7,24 @@
           "location_predicate": {
             "predicate_type": "minecraft:always_true"
           },
-          "input_predicate": {
-            "predicate_type": "minecraft:random_block_match",
-            "block": "minecraft:chest",
-            "probability": 0.5
+          "input_predicate":{
+            "predicate_type":"minecraft:block_match",
+            "block":"minecraft:birch_sign"
           },
-          "output_state": {
-            "Name": "minecraft:structure_void"
+          "output_state":{
+            "Name":"minecraft_structure_void"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate":{
+            "predicate_type":"minecraft:block_match",
+            "block":"minecraft:birch_wall_sign"
+          },
+          "output_state":{
+            "Name":"minecraft_structure_void"
           }
         },
         {
@@ -97,14 +108,14 @@
             "block_state": {
               "Name": "minecraft:chest",
               "Properties": {
-                "facing": "east"
+                "facing": "west"
               }
             }
           },
           "output_state": {
             "Name": "minecraft:chest",
             "Properties": {
-              "facing": "east"
+              "facing": "west"
             }
           },
           "block_entity_modifier": {

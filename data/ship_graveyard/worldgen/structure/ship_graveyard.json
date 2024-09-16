@@ -1,7 +1,16 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:has_structure/ship_graveyard",
+  "biomes": "#ship_graveyard:has_structure/ship_graveyard",
   "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "start_pool": "ship_graveyard:starts",
+  "size": 4,
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "OCEAN_FLOOR",
+  "max_distance_from_center": 48,
+  "use_expansion_hack": false,
   "spawn_overrides": {
     "water_creature": {
       "bounding_box": "full",
@@ -37,15 +46,5 @@
         }
       ]
     }
-  },
-  "terrain_adaptation": "none",
-  "start_pool": "minecraft:sunken_ships",
-  "start_jigsaw_name": "minecraft:sunken_ship",
-  "size": 4,
-  "start_height": {
-    "absolute": 0
-  },
-  "project_start_to_heightmap": "OCEAN_FLOOR",
-  "max_distance_from_center": 48,
-  "use_expansion_hack": false
+  }
 }
