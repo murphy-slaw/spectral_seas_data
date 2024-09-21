@@ -1,5 +1,5 @@
 {
-	"feature": "ship_graveyard:large_pillar",
+	"feature": "ship_graveyard:rock_pile",
 	"placement": [
 		{
 			"type": "minecraft:heightmap",

@@ -5,8 +5,8 @@
             "weight": 1,
             "element":{
                 "element_type": "feature_pool_element",
-                "feature": "ship_graveyard:large_pillar",
-                "projection": "terrain_matching"
+                "feature": "ship_graveyard:rock_pile",
+                "projection": "rigid"
             }
         }
     ]

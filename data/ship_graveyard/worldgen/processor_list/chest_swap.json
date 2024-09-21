@@ -8,23 +8,11 @@
             "predicate_type": "minecraft:always_true"
           },
           "input_predicate":{
-            "predicate_type":"minecraft:block_match",
-            "block":"minecraft:birch_sign"
+            "predicate_type":"minecraft:tag_match",
+            "tag": "minecraft:all_signs"
           },
           "output_state":{
-            "Name":"minecraft_structure_void"
-          }
-        },
-        {
-          "location_predicate": {
-            "predicate_type": "minecraft:always_true"
-          },
-          "input_predicate":{
-            "predicate_type":"minecraft:block_match",
-            "block":"minecraft:birch_wall_sign"
-          },
-          "output_state":{
-            "Name":"minecraft_structure_void"
+            "Name":"minecraft:water"
           }
         },
         {

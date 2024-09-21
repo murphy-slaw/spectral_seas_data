@@ -1,18 +1,18 @@
 {
   "type": "minecraft:jigsaw",
   "biomes": "#ship_graveyard:has_structure/ship_graveyard",
-  "step": "surface_structures",
-  "terrain_adaptation": "none",
+  "step": "underground_structures",
+  "terrain_adaptation": "beard_box",
   "start_pool": "ship_graveyard:starts",
-  "size": 4,
+  "size": 7,
   "start_height": {
     "absolute": 0
   },
-  "project_start_to_heightmap": "OCEAN_FLOOR",
-  "max_distance_from_center": 48,
+  "project_start_to_heightmap": "OCEAN_FLOOR_WG",
+  "max_distance_from_center": 80,
   "use_expansion_hack": false,
   "spawn_overrides": {
-    "water_creature": {
+    "underground_water_creature": {
       "bounding_box": "full",
       "spawns": [
         {
