@@ -154,8 +154,12 @@
 			"path": "worldgen/structure_set/villages_swamp.json"
 		},
 		{
-			"namespace": "witch_villa",
-			"path": "worldgen/structure_set/villages_swamp.json"
+			"namespace": "nova_structures",
+			"path": "worldgen/structure_set/witch_villa.json"
+		},
+		{
+			"namespace": "zenith",
+			"path": "worldgen/structure_set/"
 		}
 	  ]
 	}
