@@ -63,6 +63,10 @@
 		{
 			"structure": "nova_structures:desert_ruins",
 			"weight": 1
+		},
+		{
+			"structure": "nova_structures:ruin_town",
+			"weight": 1
 		}
   ],
   "placement": {
