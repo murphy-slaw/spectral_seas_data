@@ -1,5 +1,5 @@
 {
-    "type": "biome_modifier:remove_features",
+    "type": "lithostitched:remove_features",
     "biomes": "#minecraft:has_feature/lake_lava_surface",
     "features": [
         "minecraft:lake_lava_surface",

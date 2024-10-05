@@ -1,5 +1,5 @@
 {
-    "type": "biome_modifier:remove_features",
+    "type": "lithostitched:remove_features",
     "biomes": "minecraft:desert",
     "features": [
         "geophilic:desert/lava_lakes"
