@@ -145,7 +145,28 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "Mysterious Old Map",
+                                "text": "Mysterious Ancient Map",
+                                "color": "#f1f2c6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:map",
+                    "functions": [
+                        {
+                            "function": "minecraft:exploration_map",
+                            "destination": "spectral_seas:undead",
+                            "decoration": "target_x",
+                            "zoom": 4,
+                            "search_radius": 100,
+                            "skip_existing_chunks": true
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "Mysterious Creepy Map",
                                 "color": "#f1f2c6"
                             }
                         }

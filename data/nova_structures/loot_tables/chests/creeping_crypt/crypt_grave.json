@@ -88,8 +88,8 @@
           "name": "minecraft:iron_boots"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_sword"
+          "type": "loot_table",
+          "name": "spectral_seas:chests/iron_weapon"
         },
         {
           "type": "minecraft:item",

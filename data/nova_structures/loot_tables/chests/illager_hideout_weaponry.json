@@ -50,7 +50,7 @@
           "name": "minecraft:iron_hoe"
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 5,
           "functions": [
             {
@@ -70,30 +70,7 @@
               }
             }
           ],
-          "name": "minecraft:iron_sword"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 10.0,
-                "max": 15.0
-              },
-              "treasure": true
-            },
-            {
-              "function": "set_damage",
-              "damage": {
-                "min": 0.7,
-                "max": 0.8
-              }
-            }
-          ],
-          "name": "minecraft:iron_axe"
+          "name": "spectral_seas:chests/iron_weapon"
         },
         {
           "type": "minecraft:item",

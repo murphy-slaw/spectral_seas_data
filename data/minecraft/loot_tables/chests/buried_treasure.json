@@ -119,8 +119,8 @@
           "name": "minecraft:leather_chestplate"
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_sword"
+          "type": "loot_table",
+          "name": "spectral_seas:chests/iron_weapon"
         }
       ],
       "rolls": {

@@ -91,9 +91,9 @@
           "name": "minecraft:diamond_horse_armor"
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 3,
-          "name": "minecraft:diamond_sword",
+          "name": "spectral_seas:chests/diamond_weapon",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -203,9 +203,9 @@
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "loot_table",
           "weight": 3,
-          "name": "minecraft:iron_sword",
+          "name": "spectral_seas:chests/iron_weapon",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",

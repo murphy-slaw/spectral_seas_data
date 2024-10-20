@@ -81,7 +81,7 @@
           "name": "minecraft:emerald"
         },
         {
-          "type": "minecraft:item",
+          "type": "loot_table",
           "weight": 1,
           "functions": [
             {
@@ -101,7 +101,7 @@
               "treasure": false
             }
           ],
-          "name": "minecraft:iron_sword"
+          "name": "spectral_seas:chests/iron_weapon"
         }
       ]
     },
