@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "hopo:portal_deepslate",
+        "hopo:portal_dripstone",
+        "hopo:portal_lush"
+    ]
+}

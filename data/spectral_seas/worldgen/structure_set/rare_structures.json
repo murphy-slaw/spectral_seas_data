@@ -80,10 +80,10 @@
       "other_set": "#mvs:common_avoid"
     },
 
-    "spacing": 32,
+    "spacing": 24,
 
-    "separation": 8,
+    "separation": 12,
 
-    "min_distance_from_world_origin": 500
+    "min_distance_from_world_origin": 1000
   }
 }
