@@ -350,10 +350,6 @@
         "towns_and_towers:village_sunflower_plains",
         "towns_and_towers:village_swamp",
         "towns_and_towers:village_wooded_badlands",
-        "towns_and_towers:wreckage_ocean",
-        "zenith:tower_leaf",
-        "zenith:tower_main",
-        "zenith:tower_sand",
-        "zenith:tower_spruce"
+        "towns_and_towers:wreckage_ocean"
     ]
 }
