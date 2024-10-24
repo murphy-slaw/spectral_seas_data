@@ -3,91 +3,91 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 4,
-        "max": 8,
-        "type": "minecraft:uniform"
+        "max": 8
       },
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
           "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
-                "max": 3,
-                "type": "minecraft:uniform"
+                "max": 3
               }
             }
-          ],
-          "name": "minecraft:iron_ingot"
+          ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:feather",
           "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
-                "max": 4,
-                "type": "minecraft:uniform"
+                "max": 4
               }
             }
-          ],
-          "name": "minecraft:feather"
+          ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:emerald",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
-                "max": 2,
-                "type": "minecraft:uniform"
+                "max": 2
               }
             }
-          ],
-          "name": "minecraft:emerald"
+          ]
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
-                "max": 4,
-                "type": "minecraft:uniform"
+                "max": 4
               }
             }
-          ],
-          "name": "minecraft:gold_nugget"
+          ]
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
-          "name": "minecraft:ender_pearl"
+          "name": "minecraft:ender_pearl",
+          "weight": 8
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:compass"
+          "name": "minecraft:compass",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:book",
           "weight": 3,
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
               "levels": 30
             }
-          ],
-          "name": "minecraft:book"
+          ]
         }
       ]
     },
@@ -106,6 +106,54 @@
         {
           "type": "minecraft:loot_table",
           "name": "totw_reworked:adventure_map"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vc_gliders:paraglider_wood",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 20,
+                "max": 80
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "grapplemod:grappling_hook",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 20,
+                "max": 80
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vc_gliders:reinforced_paper",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
         }
       ]
     }
