@@ -146,11 +146,11 @@
         },
         {
           "type": "minecraft:item",
-          "name": "small_ships:sail"
+          "name": "smallships:sail"
         },
         {
           "type": "minecraft:item",
-          "name": "small_ships:cannon_ball",
+          "name": "smallships:cannon_ball",
           "functions": [
             {
               "function": "minecraft:set_count",
