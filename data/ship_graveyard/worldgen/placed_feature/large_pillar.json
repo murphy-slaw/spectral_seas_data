@@ -1,9 +1,0 @@
-{
-	"feature": "ship_graveyard:large_pillar",
-	"placement": [
-		{
-			"type": "minecraft:heightmap",
-			"heightmap": "OCEAN_FLOOR"
-		}
-	]
-}
