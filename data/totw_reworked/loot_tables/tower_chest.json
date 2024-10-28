@@ -120,7 +120,7 @@
       "functions": [
         {
           "function": "minecraft:set_potion",
-          "id": "staminafortweakers:tirelessness"
+          "id": "staminafortweakers:tirelessness_potion"
         }
       ],
       "rolls": {
