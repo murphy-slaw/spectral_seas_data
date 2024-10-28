@@ -110,6 +110,27 @@
       ]
     },
     {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_potion",
+          "id": "staminafortweakers:tirelessness"
+        }
+      ],
+      "rolls": {
+
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 0.0
+      }
+    },
+    {
       "rolls": 1,
       "entries": [
         {
