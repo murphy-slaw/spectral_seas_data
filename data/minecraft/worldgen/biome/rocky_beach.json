@@ -26,8 +26,7 @@
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "minecraft:beach_rocks"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -71,6 +70,8 @@
       "minecraft:spring_lava"
     ],
     [
+      "minecraft:beach_boulders",
+      "minecraft:beach_trees",
       "minecraft:glow_lichen",
       "minecraft:flower_default",
       "minecraft:patch_grass_badlands",
