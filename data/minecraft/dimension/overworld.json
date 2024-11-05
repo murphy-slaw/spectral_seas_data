@@ -859,66 +859,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -1,
-              -0.93333334
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -1,
-              -0.93333334
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -7249,66 +7189,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.4,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.4,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -8749,66 +8629,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.26666668,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.26666668,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -10159,66 +9979,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              0.45
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              0.45
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -10699,66 +10459,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.55,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              0,
-              0
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.55,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -21581,7 +21281,7 @@
             ],
             "continentalness": [
               -1.2,
-              0.8
+              1
             ],
             "erosion": [
               -1,
@@ -21589,11 +21289,11 @@
             ],
             "temperature": [
               -1,
-              1
+              -0.15
             ],
             "humidity": [
               -1,
-              -0.35
+              1
             ],
             "depth": [
               0.2,
@@ -21601,7 +21301,7 @@
             ],
             "offset": 0
           },
-          "biome": "yungscavebiomes:lost_caves"
+          "biome": "yungscavebiomes:frosted_caves"
         },
         {
           "parameters": {
@@ -21618,7 +21318,37 @@
               1
             ],
             "temperature": [
+              -0.15,
+              0.55
+            ],
+            "humidity": [
+              0.7,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.9
+            ],
+            "offset": 0
+          },
+          "biome": "minecraft:lush_caves"
+        },
+        {
+          "parameters": {
+            "weirdness": [
               -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0.03
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.55,
               1
             ],
             "humidity": [
@@ -21640,6 +21370,66 @@
               1
             ],
             "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.55,
+              1
+            ],
+            "humidity": [
+              -1,
+              0.7
+            ],
+            "depth": [
+              0.2,
+              0.9
+            ],
+            "offset": 0
+          },
+          "biome": "yungscavebiomes:lost_caves"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.03,
+              0.8
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              0.55,
+              1
+            ],
+            "humidity": [
+              0.7,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.9
+            ],
+            "offset": 0
+          },
+          "biome": "yungscavebiomes:lost_caves"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
               0.8,
               1
             ],
@@ -21648,8 +21438,8 @@
               1
             ],
             "temperature": [
-              -1,
-              -0.45
+              -0.15,
+              0.55
             ],
             "humidity": [
               -1,
@@ -21682,7 +21472,7 @@
               1
             ],
             "humidity": [
-              -1,
+              0.7,
               1
             ],
             "depth": [
@@ -21691,7 +21481,7 @@
             ],
             "offset": 0
           },
-          "biome": "yungscavebiomes:frosted_caves"
+          "biome": "minecraft:dripstone_caves"
         },
         {
           "parameters": {
@@ -22549,66 +22339,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -1,
-              -0.93333334
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -1,
-              -0.93333334
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -28939,66 +28669,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.4,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.4,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.05,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -30439,66 +30109,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.26666668,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -0.26666668,
-              -0.05
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -31849,66 +31459,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              0.45
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              -0.2225,
-              0.45
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
@@ -32389,66 +31939,6 @@
             ],
             "temperature": [
               -0.15,
-              0.2
-            ],
-            "humidity": [
-              -1,
-              0.1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:rocky_beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.55,
-              1
-            ],
-            "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.1,
-              1
-            ],
-            "depth": [
-              1,
-              1
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:beach"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              0.05,
-              0.26666668
-            ],
-            "continentalness": [
-              -0.19,
-              -0.11
-            ],
-            "erosion": [
-              0.55,
-              1
-            ],
-            "temperature": [
-              0.2,
               0.55
             ],
             "humidity": [
