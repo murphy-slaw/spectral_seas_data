@@ -61,7 +61,7 @@
             ],
             "offset": 0
           },
-          "biome": "minecraft:nether_wastes"
+          "biome": "minecraft:lava_sea"
         },
         {
           "parameters": {
@@ -11731,7 +11731,7 @@
             ],
             "offset": 0
           },
-          "biome": "minecraft:nether_wastes"
+          "biome": "minecraft:lava_sea"
         },
         {
           "parameters": {
