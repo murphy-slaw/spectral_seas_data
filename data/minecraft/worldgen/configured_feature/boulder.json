@@ -91,18 +91,14 @@
     "noise_multiplier": 0.06,
     "outer_wall_distance": {
       "type": "minecraft:uniform",
-      "value": {
-        "min_inclusive": 1,
-        "max_inclusive": 2
-      }
+      "min_inclusive": 1,
+      "max_inclusive": 2
     },
     "placements_require_layer0_alternate": false,
     "point_offset": {
       "type": "minecraft:uniform",
-      "value": {
-        "min_inclusive": 1,
-        "max_inclusive": 4
-      }
+      "min_inclusive": 1,
+      "max_inclusive": 4
     },
     "use_alternate_layer0_chance": 0,
     "use_potential_placements_chance": 0

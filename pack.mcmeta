@@ -154,6 +154,10 @@
 			"path": "worldgen/structure_set/witch_villa.json"
 		},
 		{
+			"namespace": "supplementaries",
+			"path": "worldgen/structure_set/"
+		},
+		{
 			"namespace": "zenith",
 			"path": "worldgen/structure_set/"
 		}
