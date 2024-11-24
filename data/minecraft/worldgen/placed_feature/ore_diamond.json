@@ -13,73 +13,11 @@
       "height": {
         "type": "minecraft:trapezoid",
         "min_inclusive": {
-          "above_bottom": -80
+          "above_bottom": -96
         },
         "max_inclusive": {
-          "above_bottom": 80
+          "above_bottom": 96
         }
-      }
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:any_of",
-        "predicates": [
-          {
-            "type": "minecraft:matching_fluids",
-            "offset": [
-              -1,
-              0,
-              0
-            ],
-            "fluids": "#minecraft:water"
-          },
-          {
-            "type": "minecraft:matching_fluids",
-            "offset": [
-              1,
-              0,
-              0
-            ],
-            "fluids": "#minecraft:water"
-          },
-          {
-            "type": "minecraft:matching_fluids",
-            "offset": [
-              0,
-              0,
-              1
-            ],
-            "fluids": "#minecraft:water"
-          },
-          {
-            "type": "minecraft:matching_fluids",
-            "offset": [
-              0,
-              0,
-              -1
-            ],
-            "fluids": "#minecraft:water"
-          },
-          {
-            "type": "minecraft:matching_fluids",
-            "offset": [
-              0,
-              -1,
-              0
-            ],
-            "fluids": "#minecraft:water"
-          },
-          {
-            "type": "minecraft:matching_fluids",
-            "offset": [
-              0,
-              1,
-              0
-            ],
-            "fluids": "#minecraft:water"
-          }
-        ]
       }
     },
     {
