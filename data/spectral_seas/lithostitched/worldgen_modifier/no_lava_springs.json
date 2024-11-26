@@ -1,6 +1,6 @@
 {
     "type": "lithostitched:remove_features",
-    "biomes": "#minecraft:has_feature/spring_lava",
+    "biomes": "#minecraft:overworld",
     "features": [
         "minecraft:spring_lava"
     ],
