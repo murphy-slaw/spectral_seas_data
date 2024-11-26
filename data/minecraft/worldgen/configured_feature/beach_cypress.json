@@ -43,16 +43,16 @@
             "height_rand_b": 3,
             "branch_count": {
                 "type": "minecraft:uniform",
-                "value": {
-                    "min_inclusive": 2,
-                    "max_inclusive": 3
+                "value":{
+                "min_inclusive": 2,
+                "max_inclusive": 3
                 }
             },
             "branch_horizontal_length": {
                 "type": "uniform",
-                "value": {
-                    "max_inclusive": 5,
-                    "min_inclusive": 3
+                "value":{
+                "max_inclusive": 5,
+                "min_inclusive": 3
                 }
             },
             "branch_start_offset_from_top": {
@@ -61,9 +61,9 @@
             },
             "branch_end_offset_from_top": {
                 "type": "uniform",
-                "value": {
-                    "min_inclusive": -1,
-                    "max_inclusive": 3
+                "value":{
+                "min_inclusive": -1,
+                "max_inclusive": 3
                 }
             }
         },
@@ -71,13 +71,18 @@
             "type": "minecraft:acacia_foliage_placer",
             "radius": {
                 "type": "minecraft:uniform",
-                "value": {
-                    "min_inclusive": 2,
-                    "max_inclusive": 3
+                "value":{
+                "min_inclusive": 2,
+                "max_inclusive": 3
                 }
             },
             "offset": 0
         },
-        "decorators": []
+        "decorators": [
+            {
+                "type": "leave_vine",
+                "probability": 0.0625
+            }
+        ]
     }
 }
