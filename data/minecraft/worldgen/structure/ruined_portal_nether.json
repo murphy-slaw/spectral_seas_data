@@ -5,7 +5,7 @@
   "spawn_overrides": {},
   "setups": [
     {
-      "placement": "on_ocean_floor",
+      "placement": "on_land_surface",
       "air_pocket_probability": 0.5,
       "mossiness": 0,
       "overgrown": false,
