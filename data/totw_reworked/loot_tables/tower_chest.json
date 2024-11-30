@@ -97,12 +97,7 @@
         {
           "type": "minecraft:loot_table",
           "name": "totw_reworked:tower_map"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:loot_table",
           "name": "totw_reworked:adventure_map"
