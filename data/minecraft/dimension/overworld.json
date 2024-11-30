@@ -21281,7 +21281,7 @@
             ],
             "continentalness": [
               -1.2,
-              1
+              -0.19
             ],
             "erosion": [
               -1,
@@ -21289,7 +21289,37 @@
             ],
             "temperature": [
               -1,
-              -0.15
+              1
+            ],
+            "humidity": [
+              0.7,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.9
+            ],
+            "offset": 0
+          },
+          "biome": "minecraft:lush_caves"
+        },
+        {
+          "parameters": {
+            "weirdness": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.19,
+              0.03
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -1,
+              -0.45
             ],
             "humidity": [
               -1,
@@ -21310,7 +21340,7 @@
               1
             ],
             "continentalness": [
-              -1.2,
+              -0.19,
               0.8
             ],
             "erosion": [
@@ -21318,37 +21348,7 @@
               1
             ],
             "temperature": [
-              -0.15,
-              0.55
-            ],
-            "humidity": [
-              0.7,
-              1
-            ],
-            "depth": [
-              0.2,
-              0.9
-            ],
-            "offset": 0
-          },
-          "biome": "minecraft:lush_caves"
-        },
-        {
-          "parameters": {
-            "weirdness": [
-              -1,
-              1
-            ],
-            "continentalness": [
-              -1.2,
-              0.03
-            ],
-            "erosion": [
-              -1,
-              1
-            ],
-            "temperature": [
-              0.55,
+              -0.45,
               1
             ],
             "humidity": [
@@ -21378,12 +21378,12 @@
               1
             ],
             "temperature": [
-              0.55,
-              1
+              -1,
+              -0.45
             ],
             "humidity": [
-              -1,
-              0.7
+              -0.35,
+              1
             ],
             "depth": [
               0.2,
@@ -21391,7 +21391,7 @@
             ],
             "offset": 0
           },
-          "biome": "yungscavebiomes:lost_caves"
+          "biome": "yungscavebiomes:frosted_caves"
         },
         {
           "parameters": {
@@ -21401,19 +21401,19 @@
             ],
             "continentalness": [
               0.03,
-              0.8
+              1
             ],
             "erosion": [
               -1,
               1
             ],
             "temperature": [
-              0.55,
+              0.2,
               1
             ],
             "humidity": [
-              0.7,
-              1
+              -1,
+              -0.35
             ],
             "depth": [
               0.2,
@@ -21438,12 +21438,12 @@
               1
             ],
             "temperature": [
-              -0.15,
-              0.55
+              -1,
+              0.2
             ],
             "humidity": [
               -1,
-              1
+              -0.35
             ],
             "depth": [
               0.2,
@@ -21468,11 +21468,11 @@
               1
             ],
             "temperature": [
-              0.55,
+              -0.45,
               1
             ],
             "humidity": [
-              0.7,
+              -0.35,
               1
             ],
             "depth": [

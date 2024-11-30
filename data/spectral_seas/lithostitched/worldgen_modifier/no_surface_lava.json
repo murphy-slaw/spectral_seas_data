@@ -1,6 +1,6 @@
 {
     "type": "lithostitched:remove_features",
-    "biomes": "#minecraft:overworld",
+    "biomes": "#minecraft:is_overworld",
     "features": [
         "minecraft:lake_lava_surface",
         "minecraft:lake_lava_underground"

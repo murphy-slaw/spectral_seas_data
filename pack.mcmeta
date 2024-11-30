@@ -135,10 +135,6 @@
 		},
 		{
 			"namespace": "nova_structures",
-			"path": "worldgen/structure_set/jungle_ruins.json"
-		},
-		{
-			"namespace": "nova_structures",
 			"path": "worldgen/structure_set/stray_fort.json"
 		},
 		{
