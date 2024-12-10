@@ -1,10 +1,6 @@
 {
   "structures":[
     {
-      "structure": "mvs:cathedral",
-      "weight": 1
-    },
-    {
       "structure": "mostructures:big_pyramid",
       "weight": 1
     },
@@ -38,10 +34,6 @@
     },
     {
       "structure": "mvs:jungle_tower",
-      "weight": 1
-    },
-    {
-      "structure": "mvs:sunzi_gate",
       "weight": 1
     },
     {
