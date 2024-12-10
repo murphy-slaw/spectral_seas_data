@@ -6,44 +6,36 @@
 	"filter": {
 	  "block": [
 		{
-		  "namespace": "simplyswords",
-		  "path": "advancements/grant_book_on_first_join.json"
-		},
-		{
-			"namespace": "hybrid-aquatic",
-			"path":"hybrid-aquatic/sea_message"
-		},
-		{
-			"namespace": "mostructures",
-			"path": "worldgen/structure_set"
+			"namespace": "mvs",
+			"path": "worldgen/structure_set/carts/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/carts"
+			"path": "worldgen/structure_set/dead_tree/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/dead_tree"
+			"path": "worldgen/structure_set/nature/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/nature"
+			"path": "worldgen/structure_set/log_pile/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/log_pile"
+			"path": "worldgen/structure_set/other_decoration/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/other_decoration"
+			"path": "worldgen/structure_set/stall/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/stalls"
+			"path": "worldgen/structure_set/lantern/"
 		},
 		{
 			"namespace": "mvs",
-			"path": "worldgen/structure_set/wells"
+			"path": "worldgen/structure_set/well/"
 		},
 		{
 			"namespace": "mvs",
@@ -102,8 +94,96 @@
 			"path": "worldgen/structure_set/sunzi_gate.json"
 		},
 		{
+		  "namespace": "simplyswords",
+		  "path": "advancements/grant_book_on_first_join.json"
+		},
+		{
+			"namespace": "hybrid-aquatic",
+			"path":"hybrid-aquatic/sea_message"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/abandoned_church.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/air_balloon.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/barn_house.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/big_pyramid.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/ice_tower.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/jungle_pyramid.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/killer_bunny_castle.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/lighthouse.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/moai.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/pillager_factory.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/pillager_mines.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/pirate_ship.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/tavern.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/the_castle_in_the_sky.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/villager_market.json"
+		},
+		{
+			"namespace": "mostructures",
+			"path": "worldgen/structure_set/villager_tower.json"
+		},
+		{
 			"namespace": "totw_reworked",
-			"path": "worldgen/structure_set"
+			"path": "worldgen/structure_set/derelict.*json"
+		},
+		{
+			"namespace": "totw_reworked",
+			"path": "worldgen/structure_set/ice.json"
+		},
+		{
+			"namespace": "totw_reworked",
+			"path": "worldgen/structure_set/jungle.json"
+		},
+		{
+			"namespace": "totw_reworked",
+			"path": "worldgen/structure_set/ocean.*json"
+		},
+		{
+			"namespace": "totw_reworked",
+			"path": "worldgen/structure_set/regular.json"
 		},
 		{
 			"namespace": "towns_and_towers",
@@ -151,11 +231,7 @@
 		},
 		{
 			"namespace": "supplementaries",
-			"path": "worldgen/structure_set/"
-		},
-		{
-			"namespace": "zenith",
-			"path": "worldgen/structure_set/"
+			"path": "worldgen/structure_set/way_signs.json"
 		}
 	  ]
 	}
