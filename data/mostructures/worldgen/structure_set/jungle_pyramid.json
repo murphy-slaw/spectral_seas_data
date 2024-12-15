@@ -6,8 +6,11 @@
     }
   ],
   "placement": {
-    "type": "mostructures:type",
-    "structure_set_to_avoid": [],
+    "type": "mvs:advanced_random_spread",
+    "super_exclusion_zone": {
+      "chunk_count": 5,
+      "other_set": "#mvs:common_avoid"
+    },
     "spacing": 16,
     "separation": 14,
     "salt": 112178642
