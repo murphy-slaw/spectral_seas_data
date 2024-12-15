@@ -30,7 +30,11 @@
         }
     ],
     "placement": {
-        "type": "minecraft:random_spread",
+        "type": "mvs:advanced_random_spread",
+        "super_exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "#mvs:common_avoid"
+        },
         "spacing": 55,
         "separation": 35,
         "salt": 1689777

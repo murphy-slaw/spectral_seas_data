@@ -26,13 +26,13 @@
 		}
 	],
 	"placement": {
-		"exclusion_zone": {
-      "other_set": "minecraft:villages",
-      "chunk_count": 10
-    },
+		"type": "mvs:advanced_random_spread",
+		"super_exclusion_zone": {
+			"chunk_count": 10,
+			"other_set": "#mvs:common_avoid"
+		},
 		"spacing": 40,
 		"separation": 15,
-		"salt": 430930,
-		"type": "minecraft:random_spread"
+		"salt": 430930
 	}
 }

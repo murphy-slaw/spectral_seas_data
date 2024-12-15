@@ -4,7 +4,11 @@
     "salt": 10387312,
     "separation": 24,
     "spacing": 48,
-    "min_distance_from_world_origin": 512
+    "min_distance_from_world_origin": 1000,
+    "super_exclusion_zone": {
+      "chunk_count": 24,
+      "other_set": "#mvs:common_avoid"
+    }
   },
   "structures": [
     {
@@ -89,6 +93,10 @@
     },
     {
       "structure": "nova_structures:village_jungle",
+      "weight": 1
+    },
+    {
+      "structure": "nova_structures:ruin_town",
       "weight": 1
     }
   ]

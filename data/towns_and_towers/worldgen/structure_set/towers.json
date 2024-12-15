@@ -90,15 +90,15 @@
     }
   ],
   "placement": {
+    "type": "mvs:advanced_random_spread",
+    "super_exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "#mvs:common_avoid"
+    },
     "salt": 205745294,
     "spacing": 48,
     "separation": 24,
     "frequency": 0.2,
-    "frequency_reduction_method": "legacy_type_1",
-    "type": "minecraft:random_spread",
-    "exclusion_zone": {
-      "chunk_count": 5,
-      "other_set": "minecraft:villages"
-    }
+    "frequency_reduction_method": "legacy_type_1"
   }
 }
