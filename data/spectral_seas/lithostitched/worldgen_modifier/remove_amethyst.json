@@ -1,7 +1,9 @@
 {
     "type": "lithostitched:remove_features",
     "features": [
-        "minecraft:amethyst_geode"
+        "minecraft:amethyst_geode",
+        "minecraft:amethyst_geode-large",
+        "minecraft:amethyst_geode-massive"
     ],
     "step": "local_modifications",
     "biomes": [
@@ -55,6 +57,7 @@
         "minecraft:windswept_hills",
         "minecraft:windswept_savanna",
         "minecraft:wooded_badlands",
+        "minecraft:rocky_beach",
         "yungscavebiomes:lost_caves",
         "yungscavebiomes:frosted_caves"
     ]
