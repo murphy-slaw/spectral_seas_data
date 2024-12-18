@@ -4,7 +4,5 @@
         "minecraft:vegetation-aquifer"
     ],
     "step": "vegetal_decoration",
-    "biomes": [
-        "#minecraft:is_overworld"
-    ]
+    "biomes": "#minecraft:is_overworld"
 }
