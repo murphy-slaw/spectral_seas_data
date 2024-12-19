@@ -57,8 +57,6 @@
         "minecraft:windswept_hills",
         "minecraft:windswept_savanna",
         "minecraft:wooded_badlands",
-        "minecraft:rocky_beach",
-        "yungscavebiomes:lost_caves",
-        "yungscavebiomes:frosted_caves"
+        "minecraft:rocky_beach"
     ]
 }

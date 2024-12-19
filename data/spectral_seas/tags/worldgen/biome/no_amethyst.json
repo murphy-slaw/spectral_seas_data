@@ -19,8 +19,6 @@
     "minecraft:lukewarm_ocean",
     "minecraft:cold_ocean",
     "minecraft:frozen_ocean",
-    "minecraft:rocky_beach",
-    "yungscavebiomes:frosted_caves",
-    "yungscavebiomes:lost_caves"
+    "minecraft:rocky_beach"
   ]
 }
