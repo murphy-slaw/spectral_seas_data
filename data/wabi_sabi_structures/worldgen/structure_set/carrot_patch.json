@@ -1,10 +1,5 @@
 {
-    "structures": [
-        {
-            "structure": "wabi_sabi_structures:carrot_patch",
-            "weight": 1
-        }
-    ],
+    "structures": [],
     "placement": {
         "type": "random_spread",
         "spacing": 7,
