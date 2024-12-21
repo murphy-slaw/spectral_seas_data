@@ -3,7 +3,11 @@
     "type": "minecraft:random_spread",
     "salt": 650800552,
     "spacing": 15,
-    "separation": 8
+    "separation": 8,
+    "super_exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "#mvs:common_avoid"
+    }
   },
   "structures": [
     {
