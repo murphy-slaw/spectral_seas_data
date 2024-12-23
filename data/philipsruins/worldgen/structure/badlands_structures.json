@@ -1,6 +1,7 @@
 {
    
-  "type": "minecraft:jigsaw",
+  "type": "mvs:mvs_generic_jigsaw_structure",
+  "cannot_spawn_in_liquid": true,
   "biomes": "#philipsruins:has_structure/ancient_pyramid_biomes",
   "start_pool": "philipsruins:badlands_structures",
   "size": 2,
