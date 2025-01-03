@@ -1,8 +1,0 @@
-{
-    "type": "lithostitched:add_features",
-    "features": [
-        "minecraft:dripstone_cluster-plain_caves"
-    ],
-    "step": "underground_decoration",
-    "biomes": "#minecraft:is_overworld"
-}
