@@ -1,8 +1,0 @@
-{
-    "type": "lithostitched:add_features",
-    "features": [
-        "minecraft:vegetation-aquifer"
-    ],
-    "step": "vegetal_decoration",
-    "biomes": "#minecraft:is_overworld"
-}

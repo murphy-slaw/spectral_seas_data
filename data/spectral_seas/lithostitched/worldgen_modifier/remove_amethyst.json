@@ -1,9 +1,7 @@
 {
     "type": "lithostitched:remove_features",
     "features": [
-        "minecraft:amethyst_geode",
-        "minecraft:amethyst_geode-large",
-        "minecraft:amethyst_geode-massive"
+        "minecraft:amethyst_geode"
     ],
     "step": "local_modifications",
     "biomes": [
