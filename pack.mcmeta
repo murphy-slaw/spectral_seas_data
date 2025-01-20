@@ -83,6 +83,10 @@
 		},
 		{
 			"namespace": "mvs",
+			"path": "worldgen/structure_set/gallows.json"
+		},
+		{
+			"namespace": "mvs",
 			"path": "worldgen/structure_set/small_ship.json"
 		},
 		{
