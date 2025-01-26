@@ -2,8 +2,21 @@
   "feature": "minecraft:crimson_fungus",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
-      "count": 4
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "max_inclusive": 5,
+          "min_inclusive": 2
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
     },
     {
       "type": "minecraft:biome"
