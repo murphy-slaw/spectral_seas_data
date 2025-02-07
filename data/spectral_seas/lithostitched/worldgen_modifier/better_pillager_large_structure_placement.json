@@ -1,15 +1,12 @@
 {
   "type": "lithostitched:set_structure_spawn_condition",
   "structures": [
-    "philipsruins:level_one_ruins",
-    "philipsruins:level_two_ruins",
-    "philipsruins:level_two_ruins_pool",
-    "philipsruins:level_three_ruins",
-    "nova_structures:wild_ruin"
+    "mostructures:pillager_factory",
+    "mostructures:pillager_mines"
   ],
   "spawn_condition": {
     "type": "lithostitched:grid",
-    "radius": 3,
+    "radius": 32,
     "distance_between_points": 16,
     "condition": {
       "type": "lithostitched:any_of",
@@ -18,10 +15,22 @@
           "type": "lithostitched:not",
           "condition": {
             "type": "lithostitched:height_filter",
+            "range_type": "heightmap_relative",
+            "heightmap": "WORLD_SURFACE_WG",
+            "permitted_range": [
+              -8,
+              8
+            ]
+          }
+        },
+        {
+          "type": "lithostitched:not",
+          "condition": {
+            "type": "lithostitched:height_filter",
             "range_type": "absolute",
             "heightmap": "WORLD_SURFACE_WG",
             "permitted_range": [
-              65,
+              68,
               240
             ]
           }

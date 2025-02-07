@@ -1,6 +1,6 @@
 {
   "type": "lithostitched:set_structure_spawn_condition",
-  "structures": "#minecraft:villages",
+  "structures": "#minecraft:village",
   "spawn_condition": {
     "type": "lithostitched:grid",
     "radius": 80,
@@ -8,7 +8,6 @@
     "condition": {
       "type": "lithostitched:any_of",
       "conditions": [
-        /*
         {
           "type": "lithostitched:not",
           "condition": {
@@ -21,7 +20,6 @@
             ]
           }
         },
-        */
         {
           "type": "lithostitched:not",
           "condition": {

@@ -27,7 +27,7 @@
             "range_type": "absolute",
             "heightmap": "WORLD_SURFACE_WG",
             "permitted_range": [
-              65,
+              64,
               240
             ]
           }
