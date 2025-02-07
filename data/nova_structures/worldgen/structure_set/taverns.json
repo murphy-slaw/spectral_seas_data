@@ -47,6 +47,7 @@
 	],
 	"placement": {
 		"type": "mvs:advanced_random_spread",
+		"minDistanceFromWorldOrigin": 1000,
 		"super_exclusion_zone": {
 			"chunk_count": 5,
 			"other_set": "#minecraft:villages"
