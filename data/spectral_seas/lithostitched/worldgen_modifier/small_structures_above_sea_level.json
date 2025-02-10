@@ -1,10 +1,10 @@
 {
   "type": "lithostitched:set_structure_spawn_condition",
-  "structures": "#minecraft:village",
+  "structures": "#spectral_seas:small_above_sea_level",
   "spawn_condition": {
     "type": "lithostitched:grid",
-    "radius": 20,
-    "distance_between_points": 16,
+    "radius": 8,
+    "distance_between_points": 8,
     "condition": {
       "type": "lithostitched:any_of",
       "conditions": [
