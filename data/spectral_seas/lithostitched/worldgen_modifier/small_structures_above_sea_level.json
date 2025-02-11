@@ -3,7 +3,7 @@
   "structures": "#spectral_seas:small_above_sea_level",
   "spawn_condition": {
     "type": "lithostitched:grid",
-    "radius": 8,
+    "radius": 16,
     "distance_between_points": 8,
     "condition": {
       "type": "lithostitched:any_of",

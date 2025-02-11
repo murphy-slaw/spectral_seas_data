@@ -4,11 +4,5 @@
         "minecraft:amethyst_geode"
     ],
     "step": "local_modifications",
-    "biomes": [
-        "#minecraft:is_overworld",
-        {
-            "id": "#minecraft:is_deep_ocean",
-            "exclude": true
-        }
-    ]
+    "biomes": "#spectral_seas:no_amethyst"
 }
