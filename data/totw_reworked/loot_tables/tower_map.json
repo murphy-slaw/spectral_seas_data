@@ -23,7 +23,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
@@ -52,7 +52,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
@@ -81,7 +81,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
@@ -110,7 +110,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
@@ -139,7 +139,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
@@ -168,7 +168,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
@@ -197,7 +197,7 @@
                                     "function": "minecraft:set_name",
                                     "name": {
                                         "text": "Tower Map",
-                                        "color": "#41816a"
+                                        "color": "dark_aqua"
                                     }
                                 }
                             ],
