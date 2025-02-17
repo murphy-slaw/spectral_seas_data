@@ -1,7 +1,7 @@
 {
   "placement": {
     "type": "mvs:advanced_random_spread",
-    "minDistanceFromWorldOrigin": 1000,
+    "min_distance_from_world_origin": 500,
     "salt": 10387312,
     "separation": 10,
     "spacing": 12,
