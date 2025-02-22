@@ -5,7 +5,7 @@
         {
             "equippedItemThreshold": 4,
             "toolTipText": "spectral_seas.diving_set.threshold_4",
-            "statusEffectId": "kubejs:amphibious",
+            "statusEffectId": "spectral_seas:amphibious",
             "statusEffectLevel": 0,
             "isAmbient": true,
             "showParticles": false,
