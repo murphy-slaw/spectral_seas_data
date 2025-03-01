@@ -5,7 +5,8 @@
 	"upgradesTo": [
 		"minecraft:iron",
 		"minecraft:chain",
-		"minecraft:gold"
+		"minecraft:gold",
+		"hybrid-aquatic:copper"
 	],
 	"addItem": [
 		"minecraft:leather_horse_armor"
