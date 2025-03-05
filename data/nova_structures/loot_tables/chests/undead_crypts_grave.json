@@ -102,6 +102,23 @@
             }
           ],
           "name": "spectral_seas:chests/iron_weapon"
+        },
+        {
+          "type": "loot_table",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.0,
+                "max": 0.0
+              }
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "spectral_seas:chests/diamond_weapon"
         }
       ]
     },

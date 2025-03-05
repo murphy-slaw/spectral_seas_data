@@ -116,7 +116,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather_chestplate"
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{style:'pirate'}"
+            }
+          ]
         },
         {
           "type": "loot_table",
