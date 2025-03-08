@@ -21,7 +21,6 @@
     "towns_and_towers:village_snowy_taiga",
     "towns_and_towers:village_swamp",
     "towns_and_towers:village_wooded_badlands",
-    "nova_structures:village_jungle",
-    "nova_structures:ruin_town"
+    "nova_structures:village_jungle"
   ]
 }
