@@ -1,7 +1,6 @@
 {
     "type": "lithostitched:set_pool_element_processors",
     "template_pool": [
-        "nova_structures:bunker_room",
         "nova_structures:undead_crypt",
         "nova_structures:creeping_crypt/rooms"
     ],
