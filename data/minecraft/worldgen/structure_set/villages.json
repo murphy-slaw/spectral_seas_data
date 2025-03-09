@@ -13,90 +13,86 @@
   "structures": [
     {
       "structure": "minecraft:village_plains",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "minecraft:village_desert",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "minecraft:village_savanna",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "minecraft:village_snowy",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "minecraft:village_taiga",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_badlands",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_beach",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_birch_forest",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_flower_forest",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_snowy_slopes",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_meadow",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_mushroom_fields",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_old_growth_taiga",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_grove",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_savanna_plateau",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_sunflower_plains",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_snowy_taiga",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_sparse_jungle",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_swamp",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "towns_and_towers:village_wooded_badlands",
-      "weight": 4
+      "weight": 1
     },
     {
       "structure": "nova_structures:village_jungle",
-      "weight": 4
-    },
-    {
-      "structure": "nova_structures:ruin_town",
       "weight": 1
     }
   ]
