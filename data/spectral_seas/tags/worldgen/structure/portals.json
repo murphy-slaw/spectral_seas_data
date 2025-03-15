@@ -1,8 +1,8 @@
 {
     "replace": false,
     "values": [
-        "hopo:portal_deepslate",
-        "hopo:portal_dripstone",
-        "hopo:portal_lush"
+        "minecraft:deepslate_portal",
+        "minecraft:dripstone_portal",
+        "minecraft:lush_portal"
     ]
 }
