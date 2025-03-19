@@ -9,24 +9,19 @@
   ],
   "spawn_condition": {
     "type": "lithostitched:grid",
-    "radius": 3,
-    "distance_between_points": 16,
+    "radius": 16,
+    "distance_between_points": 8,
     "condition": {
-      "type": "lithostitched:any_of",
-      "conditions": [
-        {
-          "type": "lithostitched:not",
-          "condition": {
-            "type": "lithostitched:height_filter",
-            "range_type": "absolute",
-            "heightmap": "WORLD_SURFACE_WG",
-            "permitted_range": [
-              65,
-              240
-            ]
-          }
-        }
-      ]
+      "type": "lithostitched:not",
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "absolute",
+        "heightmap": "WORLD_SURFACE_WG",
+        "permitted_range": [
+          65,
+          240
+        ]
+      }
     },
     "allowed_count": 0
   }
