@@ -21601,7 +21601,7 @@
             ],
             "offset": 0
           },
-          "biome": "galosphere:crystal_caves"
+          "biome": "galosphere:crystal_canyons"
         },
         {
           "parameters": {
@@ -21751,7 +21751,7 @@
             ],
             "offset": 0
           },
-          "biome": "galosphere:crystal_caves"
+          "biome": "galosphere:crystal_canyons"
         },
         {
           "parameters": {
