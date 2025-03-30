@@ -119,7 +119,6 @@
         }
       ],
       "rolls": {
-
         "type": "minecraft:uniform",
         "max": 2.0,
         "min": 0.0
@@ -147,7 +146,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "grapplemod:grappling_hook",
+          "name": "hookshot:white_hookshot",
           "functions": [
             {
               "function": "minecraft:set_damage",

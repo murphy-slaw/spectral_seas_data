@@ -124,7 +124,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "grapplemod:grappling_hook",
+          "name": "hookshot:white_hookshot",
           "functions": [
             {
               "function": "minecraft:set_damage",
