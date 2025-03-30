@@ -3,18 +3,8 @@
     "template_pool": [
         "totw_reworked:derelict/top",
         "totw_reworked:derelict_grass/top",
-        "totw_reworked:ice/top",
-        "totw_reworked:jungle/top",
-        "totw_reworked:ocean/top",
-        "totw_reworked:ocean_warm/top",
-        "totw_reworked:regular/top",
         "totw_reworked:derelict/bottom",
-        "totw_reworked:derelict_grass/bottom",
-        "totw_reworked:ice/bottom",
-        "totw_reworked:jungle/bottom",
-        "totw_reworked:ocean/bottom",
-        "totw_reworked:ocean_warm/bottom",
-        "totw_reworked:regular/bottom"
+        "totw_reworked:derelict_grass/bottom"
     ],
     "processor_list": [
         {
