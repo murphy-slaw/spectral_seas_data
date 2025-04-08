@@ -1,0 +1,891 @@
+{
+  "fluids": {
+    "spectral_seas:witch_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "spectral_seas:moss_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "spectral_seas:flesh_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "spectral_seas:mushroom_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "spectral_seas:mushroom_flesh_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "spectral_seas:moss_mushroom_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "spectral_seas:moss_flesh_brew": {
+      "default": "potioncraft:potion_cauldron_block",
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    }
+  },
+  "inversions": [
+    {
+      "from": "speed",
+      "to": "slowness",
+      "mutual": true
+    },
+    {
+      "from": "jump_boost",
+      "to": "slow_falling",
+      "mutual": true
+    },
+    {
+      "from": "instant_health",
+      "to": "instant_damage",
+      "mutual": true
+    },
+    {
+      "from": "poison",
+      "to": "regeneration",
+      "mutual": true
+    },
+    {
+      "from": "night_vision",
+      "to": "blindness",
+      "mutual": true
+    },
+    {
+      "from": "strength",
+      "to": "weakness",
+      "mutual": true
+    }
+  ],
+  "heats": {
+    "campfire": 2,
+    "fire": 2,
+    "magma_block": 2,
+    "lava": 3,
+    "lava_cauldron": 3,
+    "snow": -1,
+    "snow_block": -1,
+    "powder_snow": -1,
+    "powder_snow_cauldron": -1,
+    "ice": -2,
+    "frosted_ice": -2,
+    "packed_ice": -3,
+    "blue_ice": -4
+  },
+  "templates": {
+    "use_if_fluid": {
+      "defaults": {
+        "fluids": "minecraft:water",
+        "sound": "item.bottle.empty",
+        "returned_item": 0,
+        "count": 1,
+        "applyPotion": false
+      },
+      "effects": [
+        {
+          "id": "HAS_FLUID",
+          "quickfail": "PASS",
+          "params": {
+            "fluids": "@{fluids}"
+          }
+        },
+        {
+          "id": "USE_ITEM",
+          "quickfail": "PASS",
+          "params": {
+            "id": "@{returned_item}",
+            "count": "@{count}",
+            "applyPotion": "@{applyPotion}",
+            "sound": "@{sound}"
+          }
+        }
+      ]
+    },
+    "add_potion_if_water": {
+      "effects": [
+        {
+          "id": "${use_if_fluid}",
+          "params": {
+            "fluids": "spectral_seas:witch_brew"
+          }
+        },
+        {
+          "id": "ADD_POTION_EFFECT",
+          "quickfail": "PASS",
+          "params": {
+            "id": "@{potion}"
+          }
+        }
+      ]
+    }
+  },
+  "recipes": {
+    "spectral_seas:witch_brew": {
+      "sugar": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "swiftness"
+            }
+          }
+        ]
+      },
+      "rabbit_foot": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "leaping"
+            }
+          }
+        ]
+      },
+      "glistering_melon_slice": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "healing"
+            }
+          }
+        ]
+      },
+      "spider_eye": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "poison"
+            }
+          }
+        ]
+      },
+      "pufferfish": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "water_breathing"
+            }
+          }
+        ]
+      },
+      "magma_cream": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "fire_resistance"
+            }
+          }
+        ]
+      },
+      "golden_carrot": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "night_vision"
+            }
+          }
+        ]
+      },
+      "blaze_powder": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "strength"
+            }
+          }
+        ]
+      },
+      "ghast_tear": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "regeneration"
+            }
+          }
+        ]
+      },
+      "turtle_helmet": {
+        "potency": 1,
+        "effects": [
+          "${use_if_fluid}",
+          {
+            "id": "ADD_STATUS_EFFECT",
+            "quickfail": "PASS",
+            "params": {
+              "id": "slowness",
+              "duration": 400.0,
+              "amplifier": 4.0
+            }
+          },
+          {
+            "id": "ADD_STATUS_EFFECT",
+            "quickfail": "PASS",
+            "params": {
+              "id": "resistance",
+              "duration": 400.0,
+              "amplifier": 3.0
+            }
+          }
+        ]
+      },
+      "phantom_membrane": {
+        "potency": 1,
+        "effects": [
+          {
+            "id": "${add_potion_if_water}",
+            "params": {
+              "potion": "slow_falling"
+            }
+          }
+        ]
+      }
+    },
+    "potioncraft:potion_cauldron_block": {
+      "moss_block": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "ADD_STATUS_EFFECT",
+            "params": {
+              "id": "spectral_seas:moss_effect"
+            }
+          },
+          {
+            "id": "OR",
+            "params": {
+              "short_circuit": true,
+              "conditions": [
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "minecraft:water"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:moss_brew"
+                        }
+                      },
+                      {
+                        "id": "CLEAR_EFFECTS"
+                      },
+                      {
+                        "id": "ADD_STATUS_EFFECT",
+                        "params": {
+                          "id": "spectral_seas:moss_effect"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:flesh_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:moss_flesh_brew"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:mushroom_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:moss_mushroom_brew"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:mushroom_flesh_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:witch_brew"
+                        }
+                      },
+                      {
+                        "id": "CLEAR_EFFECTS"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "rotten_flesh": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "ADD_STATUS_EFFECT",
+            "params": {
+              "id": "spectral_seas:flesh_effect"
+            }
+          },
+          {
+            "id": "OR",
+            "params": {
+              "short_circuit": true,
+              "conditions": [
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "minecraft:water"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:flesh_brew"
+                        }
+                      },
+                      {
+                        "id": "CLEAR_EFFECTS"
+                      },
+                      {
+                        "id": "ADD_STATUS_EFFECT",
+                        "params": {
+                          "id": "spectral_seas:rotten_effect"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:moss_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:moss_flesh_brew"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:mushroom_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:mushroom_flesh_brew"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:moss_mushroom_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:witch_brew"
+                        }
+                      },
+                      {
+                        "id": "CLEAR_EFFECTS"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "red_mushroom": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "ADD_STATUS_EFFECT",
+            "params": {
+              "id": "spectral_seas:mushroom_effect"
+            }
+          },
+          {
+            "id": "OR",
+            "params": {
+              "short_circuit": true,
+              "conditions": [
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "minecraft:water"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:mushroom_brew"
+                        }
+                      },
+                      {
+                        "id": "CLEAR_EFFECTS"
+                      },
+                      {
+                        "id": "ADD_STATUS_EFFECT",
+                        "params": {
+                          "id": "spectral_seas:mushroom_effect"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:moss_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:moss_mushroom_brew"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:flesh_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:mushroom_flesh_brew"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "IF",
+                  "params": {
+                    "condition": {
+                      "id": "HAS_FLUID",
+                      "params": {
+                        "fluids": "spectral_seas:moss_flesh_brew"
+                      }
+                    },
+                    "then": [
+                      {
+                        "id": "SET_FLUID",
+                        "params": {
+                          "fluid": "spectral_seas:witch_brew"
+                        }
+                      },
+                      {
+                        "id": "CLEAR_EFFECTS"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:potion": {
+        "potency": -1337,
+        "effects": [
+          {
+            "id": "HAS_FLUID",
+            "params": {
+              "fluids": [
+                "minecraft:water"
+              ]
+            }
+          },
+          {
+            "id": "ADD_LEVEL",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "APPLY_ITEM_EFFECTS",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "glass_bottle",
+              "sound": "item.bottle.empty"
+            }
+          }
+        ]
+      },
+      "minecraft:glass_bottle": {
+        "effects": [
+          {
+            "id": "${use_if_fluid}",
+            "params": {
+              "fluids": "spectral_seas:witch_brew",
+              "returned_item": "potion",
+              "sound": "item.bottle.fill",
+              "applyPotion": true
+            }
+          },
+          {
+            "id": "REMOVE_LEVEL",
+            "quickfail": "PASS"
+          }
+        ]
+      },
+      "arrow": {
+        "effects": [
+          {
+            "id": "${use_if_fluid}",
+            "params": {
+              "returned_item": "tipped_arrow",
+              "count": 8,
+              "sound": "item.bottle.fill",
+              "applyPotion": true
+            }
+          },
+          {
+            "id": "REMOVE_LEVEL",
+            "quickfail": "PASS"
+          }
+        ]
+      },
+      "milk_bucket": {
+        "effects": [
+          {
+            "id": "${use_if_fluid}",
+            "params": {
+              "returned_item": "bucket",
+              "sound": "item.bucket.empty"
+            }
+          },
+          {
+            "id": "CLEAR_EFFECTS",
+            "quickfail": "PASS"
+          }
+        ]
+      },
+      "fermented_spider_eye": {
+        "potency": 1,
+        "effects": [
+          "${use_if_fluid}",
+          {
+            "id": "INVERT_EFFECTS",
+            "quickfail": "PASS"
+          }
+        ]
+      },
+      "glowstone_dust": {
+        "potency": 1,
+        "effects": [
+          "${use_if_fluid}",
+          {
+            "id": "AMPLIFY",
+            "quickfail": "PASS"
+          }
+        ]
+      },
+      "redstone": {
+        "potency": 1,
+        "effects": [
+          "${use_if_fluid}",
+          {
+            "id": "EXTEND",
+            "quickfail": "PASS"
+          }
+        ]
+      },
+      "slime_ball": {
+        "effects": [
+          {
+            "id": "HAS_FLUID",
+            "params": {
+              "fluids": [
+                "minecraft:lava"
+              ]
+            }
+          },
+          {
+            "id": "REMOVE_LEVEL",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "magma_cream",
+              "sound": "entity.generic.burn"
+            }
+          }
+        ]
+      },
+      "brick": {
+        "effects": [
+          {
+            "id": "HAS_FLUID",
+            "params": {
+              "fluids": [
+                "minecraft:lava"
+              ]
+            }
+          },
+          {
+            "id": "REMOVE_LEVEL",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "nether_brick",
+              "sound": "entity.generic.burn"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:water_cauldron": {
+      "lapis_lazuli": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "ADD_STATUS_EFFECT",
+            "params": {
+              "id": "spectral_seas:lapis_effect"
+            }
+          }
+        ]
+      },
+      "glow_ink_sac": {
+        "effects": [
+          {
+            "id": "USE_ITEM",
+            "params": {
+              "id": "ink_sac",
+              "sound": "item.bottle.empty"
+            }
+          }
+        ]
+      },
+      "brick": {
+        "effects": [
+          {
+            "id": "HAS_HEAT",
+            "params": {
+              "heat": 3
+            }
+          },
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "nether_brick",
+              "sound": "entity.generic.burn"
+            }
+          }
+        ]
+      },
+      "minecraft:potion": {
+        "potency": -1337,
+        "keepOld": true,
+        "effects": [
+          "ITEM_HAS_EFFECTS",
+          {
+            "id": "ADD_LEVEL",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "APPLY_ITEM_EFFECTS",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "glass_bottle",
+              "sound": "item.bottle.empty"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:cauldron": {
+      "minecraft:potion": {
+        "potency": -1337,
+        "keepOld": true,
+        "effects": [
+          "ITEM_HAS_EFFECTS",
+          {
+            "id": "ADD_LEVEL",
+            "quickfail": "PASS",
+            "params": {
+              "fluid": "water"
+            }
+          },
+          {
+            "id": "APPLY_ITEM_EFFECTS",
+            "quickfail": "PASS"
+          },
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "glass_bottle",
+              "sound": "item.bottle.empty"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:powder_snow_cauldron": {
+      "magma_cream": {
+        "effects": [
+          "REMOVE_LEVEL",
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "slime_ball",
+              "sound": "entity.generic.burn"
+            }
+          }
+        ]
+      }
+    },
+    "minecraft:lava_cauldron": {
+      "slime_ball": {
+        "effects": [
+          "REMOVE_LEVEL",
+          {
+            "id": "USE_ITEM",
+            "params": {
+              "id": "magma_cream",
+              "sound": "entity.generic.burn"
+            }
+          }
+        ]
+      },
+      "brick": {
+        "effects": [
+          "REMOVE_LEVEL",
+          {
+            "id": "USE_ITEM",
+            "params": {
+              "id": "nether_brick",
+              "sound": "entity.generic.burn"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
