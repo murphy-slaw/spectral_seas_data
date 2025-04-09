@@ -119,7 +119,7 @@
         }
       ]
     },
-    "add_potion_if_water": {
+    "add_potion_if_witch_brew": {
       "effects": [
         {
           "id": "${use_if_fluid}",
@@ -135,6 +135,129 @@
           }
         }
       ]
+    },
+    "add_catalyst": {
+      "defaults": {
+        "status_effect": "spectral_seas:moss_effect",
+        "own_brew": "spectral_seas:moss_brew",
+        "other_brew1": "spectral_seas:flesh_brew",
+        "combined_brew1": "spectral_seas:moss_flesh_brew",
+        "other_brew2": "spectral_seas:mushroom_brew",
+        "combined_brew2": "spectral_seas:moss_mushroom_brew",
+        "incomplete_brew": "spectral_seas:mushroom_flesh_brew",
+        "final_brew": "spectral_seas:witch_brew"
+      },
+      "effects": [
+        {
+          "id": "ADD_STATUS_EFFECT",
+          "params": {
+            "id": "@{status_effect}"
+          }
+        },
+        {
+          "id": "OR",
+          "params": {
+            "short_circuit": true,
+            "conditions": [
+              {
+                "id": "IF",
+                "params": {
+                  "condition": {
+                    "id": "HAS_FLUID",
+                    "params": {
+                      "fluids": "minecraft:water"
+                    }
+                  },
+                  "then": [
+                    {
+                      "id": "SET_FLUID",
+                      "params": {
+                        "fluid": "@{own_brew}"
+                      }
+                    },
+                    {
+                      "id": "CLEAR_EFFECTS"
+                    },
+                    {
+                      "id": "ADD_STATUS_EFFECT",
+                      "params": {
+                        "id": "@{status_effect}"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "IF",
+                "params": {
+                  "condition": {
+                    "id": "HAS_FLUID",
+                    "params": {
+                      "fluids": "@{other_brew1}"
+                    }
+                  },
+                  "then": [
+                    {
+                      "id": "SET_FLUID",
+                      "params": {
+                        "fluid": "@{combined_brew1}"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "IF",
+                "params": {
+                  "condition": {
+                    "id": "HAS_FLUID",
+                    "params": {
+                      "fluids": "@{other_brew2}"
+                    }
+                  },
+                  "then": [
+                    {
+                      "id": "SET_FLUID",
+                      "params": {
+                        "fluid": "@{combined_brew2}"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "IF",
+                "params": {
+                  "condition": {
+                    "id": "HAS_FLUID",
+                    "params": {
+                      "fluids": "@{incomplete_brew}"
+                    }
+                  },
+                  "then": [
+                    {
+                      "id": "SET_FLUID",
+                      "params": {
+                        "fluid": "@{final_brew}"
+                      }
+                    },
+                    {
+                      "id": "CLEAR_EFFECTS"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "PLAY_SOUND",
+          "quickfail": "PASS",
+          "params": {
+            "id": "entity.generic.splash"
+          }
+        }
+      ]
     }
   },
   "recipes": {
@@ -143,7 +266,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "swiftness"
             }
@@ -154,7 +277,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "leaping"
             }
@@ -165,7 +288,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "healing"
             }
@@ -176,7 +299,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "poison"
             }
@@ -187,7 +310,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "water_breathing"
             }
@@ -198,7 +321,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "fire_resistance"
             }
@@ -209,7 +332,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "night_vision"
             }
@@ -220,7 +343,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "strength"
             }
@@ -231,7 +354,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "regeneration"
             }
@@ -266,7 +389,7 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_water}",
+            "id": "${add_potion_if_witch_brew}",
             "params": {
               "potion": "slow_falling"
             }
@@ -279,105 +402,16 @@
         "potency": 0,
         "effects": [
           {
-            "id": "ADD_STATUS_EFFECT",
+            "id": "${add_catalyst}",
             "params": {
-              "id": "spectral_seas:moss_effect"
-            }
-          },
-          {
-            "id": "OR",
-            "params": {
-              "short_circuit": true,
-              "conditions": [
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "minecraft:water"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:moss_brew"
-                        }
-                      },
-                      {
-                        "id": "CLEAR_EFFECTS"
-                      },
-                      {
-                        "id": "ADD_STATUS_EFFECT",
-                        "params": {
-                          "id": "spectral_seas:moss_effect"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:flesh_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:moss_flesh_brew"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:mushroom_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:moss_mushroom_brew"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:mushroom_flesh_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:witch_brew"
-                        }
-                      },
-                      {
-                        "id": "CLEAR_EFFECTS"
-                      }
-                    ]
-                  }
-                }
-              ]
+              "status_effect": "spectral_seas:moss_effect",
+              "own_brew": "spectral_seas:moss_brew",
+              "other_brew1": "spectral_seas:flesh_brew",
+              "combined_brew1": "spectral_seas:moss_flesh_brew",
+              "other_brew2": "spectral_seas:mushroom_brew",
+              "combined_brew2": "spectral_seas:moss_mushroom_brew",
+              "incomplete_brew": "spectral_seas:mushroom_flesh_brew",
+              "final_brew": "spectral_seas:witch_brew"
             }
           }
         ]
@@ -386,105 +420,16 @@
         "potency": 0,
         "effects": [
           {
-            "id": "ADD_STATUS_EFFECT",
+            "id": "${add_catalyst}",
             "params": {
-              "id": "spectral_seas:flesh_effect"
-            }
-          },
-          {
-            "id": "OR",
-            "params": {
-              "short_circuit": true,
-              "conditions": [
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "minecraft:water"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:flesh_brew"
-                        }
-                      },
-                      {
-                        "id": "CLEAR_EFFECTS"
-                      },
-                      {
-                        "id": "ADD_STATUS_EFFECT",
-                        "params": {
-                          "id": "spectral_seas:rotten_effect"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:moss_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:moss_flesh_brew"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:mushroom_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:mushroom_flesh_brew"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:moss_mushroom_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:witch_brew"
-                        }
-                      },
-                      {
-                        "id": "CLEAR_EFFECTS"
-                      }
-                    ]
-                  }
-                }
-              ]
+              "status_effect": "spectral_seas:flesh_effect",
+              "own_brew": "spectral_seas:flesh_brew",
+              "other_brew1": "spectral_seas:moss_brew",
+              "combined_brew1": "spectral_seas:moss_flesh_brew",
+              "other_brew2": "spectral_seas:mushroom_brew",
+              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
+              "incomplete_brew": "spectral_seas:moss_mushroom_brew",
+              "final_brew": "spectral_seas:witch_brew"
             }
           }
         ]
@@ -493,134 +438,16 @@
         "potency": 0,
         "effects": [
           {
-            "id": "ADD_STATUS_EFFECT",
+            "id": "${add_catalyst}",
             "params": {
-              "id": "spectral_seas:mushroom_effect"
-            }
-          },
-          {
-            "id": "OR",
-            "params": {
-              "short_circuit": true,
-              "conditions": [
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "minecraft:water"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:mushroom_brew"
-                        }
-                      },
-                      {
-                        "id": "CLEAR_EFFECTS"
-                      },
-                      {
-                        "id": "ADD_STATUS_EFFECT",
-                        "params": {
-                          "id": "spectral_seas:mushroom_effect"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:moss_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:moss_mushroom_brew"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:flesh_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:mushroom_flesh_brew"
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "IF",
-                  "params": {
-                    "condition": {
-                      "id": "HAS_FLUID",
-                      "params": {
-                        "fluids": "spectral_seas:moss_flesh_brew"
-                      }
-                    },
-                    "then": [
-                      {
-                        "id": "SET_FLUID",
-                        "params": {
-                          "fluid": "spectral_seas:witch_brew"
-                        }
-                      },
-                      {
-                        "id": "CLEAR_EFFECTS"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "minecraft:potion": {
-        "potency": -1337,
-        "effects": [
-          {
-            "id": "HAS_FLUID",
-            "params": {
-              "fluids": [
-                "minecraft:water"
-              ]
-            }
-          },
-          {
-            "id": "ADD_LEVEL",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "APPLY_ITEM_EFFECTS",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "USE_ITEM",
-            "quickfail": "PASS",
-            "params": {
-              "id": "glass_bottle",
-              "sound": "item.bottle.empty"
+              "status_effect": "spectral_seas:mushroom_effect",
+              "own_brew": "spectral_seas:mushroom_brew",
+              "other_brew1": "spectral_seas:moss_brew",
+              "combined_brew1": "spectral_seas:moss_mushroom_brew",
+              "other_brew2": "spectral_seas:flesh_brew",
+              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
+              "incomplete_brew": "spectral_seas:moss_flesh_brew",
+              "final_brew": "spectral_seas:witch_brew"
             }
           }
         ]
@@ -647,6 +474,7 @@
           {
             "id": "${use_if_fluid}",
             "params": {
+              "fluids": "spectral_seas:witch_brew",
               "returned_item": "tipped_arrow",
               "count": 8,
               "sound": "item.bottle.fill",
@@ -683,74 +511,6 @@
             "quickfail": "PASS"
           }
         ]
-      },
-      "glowstone_dust": {
-        "potency": 1,
-        "effects": [
-          "${use_if_fluid}",
-          {
-            "id": "AMPLIFY",
-            "quickfail": "PASS"
-          }
-        ]
-      },
-      "redstone": {
-        "potency": 1,
-        "effects": [
-          "${use_if_fluid}",
-          {
-            "id": "EXTEND",
-            "quickfail": "PASS"
-          }
-        ]
-      },
-      "slime_ball": {
-        "effects": [
-          {
-            "id": "HAS_FLUID",
-            "params": {
-              "fluids": [
-                "minecraft:lava"
-              ]
-            }
-          },
-          {
-            "id": "REMOVE_LEVEL",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "USE_ITEM",
-            "quickfail": "PASS",
-            "params": {
-              "id": "magma_cream",
-              "sound": "entity.generic.burn"
-            }
-          }
-        ]
-      },
-      "brick": {
-        "effects": [
-          {
-            "id": "HAS_FLUID",
-            "params": {
-              "fluids": [
-                "minecraft:lava"
-              ]
-            }
-          },
-          {
-            "id": "REMOVE_LEVEL",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "USE_ITEM",
-            "quickfail": "PASS",
-            "params": {
-              "id": "nether_brick",
-              "sound": "entity.generic.burn"
-            }
-          }
-        ]
       }
     },
     "minecraft:water_cauldron": {
@@ -758,130 +518,23 @@
         "potency": 0,
         "effects": [
           {
-            "id": "ADD_STATUS_EFFECT",
-            "params": {
-              "id": "spectral_seas:lapis_effect"
-            }
-          }
-        ]
-      },
-      "glow_ink_sac": {
-        "effects": [
-          {
-            "id": "USE_ITEM",
-            "params": {
-              "id": "ink_sac",
-              "sound": "item.bottle.empty"
-            }
-          }
-        ]
-      },
-      "brick": {
-        "effects": [
-          {
             "id": "HAS_HEAT",
             "params": {
-              "heat": 3
+              "heat": 2
             }
           },
           {
             "id": "USE_ITEM",
             "quickfail": "PASS",
             "params": {
-              "id": "nether_brick",
-              "sound": "entity.generic.burn"
-            }
-          }
-        ]
-      },
-      "minecraft:potion": {
-        "potency": -1337,
-        "keepOld": true,
-        "effects": [
-          "ITEM_HAS_EFFECTS",
-          {
-            "id": "ADD_LEVEL",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "APPLY_ITEM_EFFECTS",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "USE_ITEM",
-            "quickfail": "PASS",
-            "params": {
-              "id": "glass_bottle",
               "sound": "item.bottle.empty"
             }
-          }
-        ]
-      }
-    },
-    "minecraft:cauldron": {
-      "minecraft:potion": {
-        "potency": -1337,
-        "keepOld": true,
-        "effects": [
-          "ITEM_HAS_EFFECTS",
-          {
-            "id": "ADD_LEVEL",
-            "quickfail": "PASS",
-            "params": {
-              "fluid": "water"
-            }
           },
           {
-            "id": "APPLY_ITEM_EFFECTS",
-            "quickfail": "PASS"
-          },
-          {
-            "id": "USE_ITEM",
+            "id": "ADD_STATUS_EFFECT",
             "quickfail": "PASS",
             "params": {
-              "id": "glass_bottle",
-              "sound": "item.bottle.empty"
-            }
-          }
-        ]
-      }
-    },
-    "minecraft:powder_snow_cauldron": {
-      "magma_cream": {
-        "effects": [
-          "REMOVE_LEVEL",
-          {
-            "id": "USE_ITEM",
-            "quickfail": "PASS",
-            "params": {
-              "id": "slime_ball",
-              "sound": "entity.generic.burn"
-            }
-          }
-        ]
-      }
-    },
-    "minecraft:lava_cauldron": {
-      "slime_ball": {
-        "effects": [
-          "REMOVE_LEVEL",
-          {
-            "id": "USE_ITEM",
-            "params": {
-              "id": "magma_cream",
-              "sound": "entity.generic.burn"
-            }
-          }
-        ]
-      },
-      "brick": {
-        "effects": [
-          "REMOVE_LEVEL",
-          {
-            "id": "USE_ITEM",
-            "params": {
-              "id": "nether_brick",
-              "sound": "entity.generic.burn"
+              "id": "spectral_seas:lapis_effect"
             }
           }
         ]
