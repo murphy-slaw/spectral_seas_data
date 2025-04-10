@@ -1,43 +1,36 @@
 {
   "fluids": {
     "spectral_seas:witch_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
     },
     "spectral_seas:moss_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
     },
     "spectral_seas:flesh_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
     },
     "spectral_seas:mushroom_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
     },
     "spectral_seas:mushroom_flesh_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
     },
     "spectral_seas:moss_mushroom_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
     },
     "spectral_seas:moss_flesh_brew": {
-      "default": "potioncraft:potion_cauldron_block",
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
@@ -138,7 +131,6 @@
     },
     "add_catalyst": {
       "defaults": {
-        "status_effect": "spectral_seas:moss_effect",
         "own_brew": "spectral_seas:moss_brew",
         "other_brew1": "spectral_seas:flesh_brew",
         "combined_brew1": "spectral_seas:moss_flesh_brew",
@@ -148,12 +140,6 @@
         "final_brew": "spectral_seas:witch_brew"
       },
       "effects": [
-        {
-          "id": "ADD_STATUS_EFFECT",
-          "params": {
-            "id": "@{status_effect}"
-          }
-        },
         {
           "id": "OR",
           "params": {
@@ -170,18 +156,15 @@
                   },
                   "then": [
                     {
-                      "id": "SET_FLUID",
+                      "id": "ADD_STATUS_EFFECT",
                       "params": {
-                        "fluid": "@{own_brew}"
+                        "id": "spectral_seas:lapis_effect"
                       }
                     },
                     {
-                      "id": "CLEAR_EFFECTS"
-                    },
-                    {
-                      "id": "ADD_STATUS_EFFECT",
+                      "id": "SET_FLUID",
                       "params": {
-                        "id": "@{status_effect}"
+                        "fluid": "@{own_brew}"
                       }
                     }
                   ]
@@ -240,15 +223,15 @@
                       "params": {
                         "fluid": "@{final_brew}"
                       }
-                    },
-                    {
-                      "id": "CLEAR_EFFECTS"
                     }
                   ]
                 }
               }
             ]
           }
+        },
+        {
+          "id": "CLEAR_EFFECTS"
         },
         {
           "id": "PLAY_SOUND",
@@ -404,7 +387,6 @@
           {
             "id": "${add_catalyst}",
             "params": {
-              "status_effect": "spectral_seas:moss_effect",
               "own_brew": "spectral_seas:moss_brew",
               "other_brew1": "spectral_seas:flesh_brew",
               "combined_brew1": "spectral_seas:moss_flesh_brew",
@@ -422,7 +404,6 @@
           {
             "id": "${add_catalyst}",
             "params": {
-              "status_effect": "spectral_seas:flesh_effect",
               "own_brew": "spectral_seas:flesh_brew",
               "other_brew1": "spectral_seas:moss_brew",
               "combined_brew1": "spectral_seas:moss_flesh_brew",
@@ -440,7 +421,6 @@
           {
             "id": "${add_catalyst}",
             "params": {
-              "status_effect": "spectral_seas:mushroom_effect",
               "own_brew": "spectral_seas:mushroom_brew",
               "other_brew1": "spectral_seas:moss_brew",
               "combined_brew1": "spectral_seas:moss_mushroom_brew",
@@ -514,6 +494,57 @@
       }
     },
     "minecraft:water_cauldron": {
+      "moss_block": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "${add_catalyst}",
+            "params": {
+              "own_brew": "spectral_seas:moss_brew",
+              "other_brew1": "spectral_seas:flesh_brew",
+              "combined_brew1": "spectral_seas:moss_flesh_brew",
+              "other_brew2": "spectral_seas:mushroom_brew",
+              "combined_brew2": "spectral_seas:moss_mushroom_brew",
+              "incomplete_brew": "spectral_seas:mushroom_flesh_brew",
+              "final_brew": "spectral_seas:witch_brew"
+            }
+          }
+        ]
+      },
+      "rotten_flesh": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "${add_catalyst}",
+            "params": {
+              "own_brew": "spectral_seas:flesh_brew",
+              "other_brew1": "spectral_seas:moss_brew",
+              "combined_brew1": "spectral_seas:moss_flesh_brew",
+              "other_brew2": "spectral_seas:mushroom_brew",
+              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
+              "incomplete_brew": "spectral_seas:moss_mushroom_brew",
+              "final_brew": "spectral_seas:witch_brew"
+            }
+          }
+        ]
+      },
+      "red_mushroom": {
+        "potency": 0,
+        "effects": [
+          {
+            "id": "${add_catalyst}",
+            "params": {
+              "own_brew": "spectral_seas:mushroom_brew",
+              "other_brew1": "spectral_seas:moss_brew",
+              "combined_brew1": "spectral_seas:moss_mushroom_brew",
+              "other_brew2": "spectral_seas:flesh_brew",
+              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
+              "incomplete_brew": "spectral_seas:moss_flesh_brew",
+              "final_brew": "spectral_seas:witch_brew"
+            }
+          }
+        ]
+      },
       "lapis_lazuli": {
         "potency": 0,
         "effects": [
