@@ -34,7 +34,21 @@
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
       ]
+    },
+    "spectral_seas:potato_soup": {
+      "cauldrons": [
+        "potioncraft:potion_cauldron_block"
+      ]
+    },
+    "milk:still_milk": {
+      "cauldrons": [
+        "milk:milk_cauldron",
+        "potioncraft:potion_cauldron_block"
+      ]
     }
+  },
+  "cauldrons": {
+    "milk:milk_cauldron": "milk:still_milk"
   },
   "inversions": [
     {
@@ -117,7 +131,10 @@
         {
           "id": "${use_if_fluid}",
           "params": {
-            "fluids": "spectral_seas:witch_brew"
+            "fluids": [
+              "spectral_seas:potato_soup",
+              "spectral_seas:suspicious_chowder"
+            ]
           }
         },
         {
@@ -125,6 +142,13 @@
           "quickfail": "PASS",
           "params": {
             "id": "@{potion}"
+          }
+        },
+        {
+          "id": "SET_FLUID",
+          "quickfail": "PASS",
+          "params": {
+            "fluid": "spectral_seas:suspicious_chowder"
           }
         }
       ]
@@ -244,7 +268,7 @@
     }
   },
   "recipes": {
-    "spectral_seas:witch_brew": {
+    "potioncraft:potion_cauldron_block": {
       "sugar": {
         "potency": 1,
         "effects": [
@@ -378,9 +402,7 @@
             }
           }
         ]
-      }
-    },
-    "potioncraft:potion_cauldron_block": {
+      },
       "moss_block": {
         "potency": 0,
         "effects": [
@@ -432,13 +454,13 @@
           }
         ]
       },
-      "minecraft:glass_bottle": {
+      "minecraft:bowl": {
         "effects": [
           {
             "id": "${use_if_fluid}",
             "params": {
-              "fluids": "spectral_seas:witch_brew",
-              "returned_item": "potion",
+              "fluids": "spectral_seas:suspicious_chowder",
+              "returned_item": "spectral_seas:suspicious_chowder",
               "sound": "item.bottle.fill",
               "applyPotion": true
             }
@@ -467,21 +489,6 @@
           }
         ]
       },
-      "milk_bucket": {
-        "effects": [
-          {
-            "id": "${use_if_fluid}",
-            "params": {
-              "returned_item": "bucket",
-              "sound": "item.bucket.empty"
-            }
-          },
-          {
-            "id": "CLEAR_EFFECTS",
-            "quickfail": "PASS"
-          }
-        ]
-      },
       "fermented_spider_eye": {
         "potency": 1,
         "effects": [
@@ -489,6 +496,72 @@
           {
             "id": "INVERT_EFFECTS",
             "quickfail": "PASS"
+          }
+        ]
+      }
+    },
+    "minecraft:cauldron": {
+      "milk_bucket": {
+        "effects": [
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "bucket"
+            }
+          },
+          {
+            "id": "ADD_LEVEL",
+            "params": {
+              "fluid": "milk:still_milk"
+            }
+          },
+          {
+            "id": "ADD_LEVEL"
+          },
+          {
+            "id": "ADD_LEVEL"
+          }
+        ]
+      },
+      "milk:milk_bottle": {
+        "effects": [
+          {
+            "id": "USE_ITEM",
+            "quickfail": "PASS",
+            "params": {
+              "id": "glass_bottle"
+            }
+          },
+          {
+            "id": "ADD_LEVEL",
+            "params": {
+              "fluid": "milk:still_milk"
+            }
+          }
+        ]
+      }
+    },
+    "milk:milk_cauldron": {
+      "potato": {
+        "effects": [
+          {
+            "id": "HAS_LEVEL",
+            "params": {
+              "level": 3
+            }
+          },
+          {
+            "id": "HAS_HEAT",
+            "params": {
+              "heat": 2
+            }
+          },
+          {
+            "id": "SET_FLUID",
+            "params": {
+              "fluid": "spectral_seas:potato_soup"
+            }
           }
         ]
       }
