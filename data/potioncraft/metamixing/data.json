@@ -1,40 +1,5 @@
 {
   "fluids": {
-    "spectral_seas:witch_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
-    "spectral_seas:moss_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
-    "spectral_seas:flesh_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
-    "spectral_seas:mushroom_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
-    "spectral_seas:mushroom_flesh_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
-    "spectral_seas:moss_mushroom_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
-    "spectral_seas:moss_flesh_brew": {
-      "cauldrons": [
-        "potioncraft:potion_cauldron_block"
-      ]
-    },
     "spectral_seas:potato_soup": {
       "cauldrons": [
         "potioncraft:potion_cauldron_block"
@@ -104,6 +69,7 @@
         "sound": "item.bottle.empty",
         "returned_item": 0,
         "count": 1,
+        "min_level": 3,
         "applyPotion": false
       },
       "effects": [
@@ -112,6 +78,13 @@
           "quickfail": "PASS",
           "params": {
             "fluids": "@{fluids}"
+          }
+        },
+        {
+          "id": "MIN_LEVEL",
+          "quickfail": "PASS",
+          "params": {
+            "level": "@{min_level}"
           }
         },
         {
@@ -126,7 +99,7 @@
         }
       ]
     },
-    "add_potion_if_witch_brew": {
+    "add_item_if_potato_soup": {
       "effects": [
         {
           "id": "${use_if_fluid}",
@@ -138,13 +111,6 @@
           }
         },
         {
-          "id": "ADD_POTION_EFFECT",
-          "quickfail": "PASS",
-          "params": {
-            "id": "@{potion}"
-          }
-        },
-        {
           "id": "SET_FLUID",
           "quickfail": "PASS",
           "params": {
@@ -153,115 +119,14 @@
         }
       ]
     },
-    "add_catalyst": {
-      "defaults": {
-        "own_brew": "spectral_seas:moss_brew",
-        "other_brew1": "spectral_seas:flesh_brew",
-        "combined_brew1": "spectral_seas:moss_flesh_brew",
-        "other_brew2": "spectral_seas:mushroom_brew",
-        "combined_brew2": "spectral_seas:moss_mushroom_brew",
-        "incomplete_brew": "spectral_seas:mushroom_flesh_brew",
-        "final_brew": "spectral_seas:witch_brew"
-      },
+    "add_potion_if_potato_soup": {
       "effects": [
+        "${add_item_if_potato_soup}",
         {
-          "id": "OR",
-          "params": {
-            "short_circuit": true,
-            "conditions": [
-              {
-                "id": "IF",
-                "params": {
-                  "condition": {
-                    "id": "HAS_FLUID",
-                    "params": {
-                      "fluids": "minecraft:water"
-                    }
-                  },
-                  "then": [
-                    {
-                      "id": "ADD_STATUS_EFFECT",
-                      "params": {
-                        "id": "spectral_seas:lapis_effect"
-                      }
-                    },
-                    {
-                      "id": "SET_FLUID",
-                      "params": {
-                        "fluid": "@{own_brew}"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "IF",
-                "params": {
-                  "condition": {
-                    "id": "HAS_FLUID",
-                    "params": {
-                      "fluids": "@{other_brew1}"
-                    }
-                  },
-                  "then": [
-                    {
-                      "id": "SET_FLUID",
-                      "params": {
-                        "fluid": "@{combined_brew1}"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "IF",
-                "params": {
-                  "condition": {
-                    "id": "HAS_FLUID",
-                    "params": {
-                      "fluids": "@{other_brew2}"
-                    }
-                  },
-                  "then": [
-                    {
-                      "id": "SET_FLUID",
-                      "params": {
-                        "fluid": "@{combined_brew2}"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "id": "IF",
-                "params": {
-                  "condition": {
-                    "id": "HAS_FLUID",
-                    "params": {
-                      "fluids": "@{incomplete_brew}"
-                    }
-                  },
-                  "then": [
-                    {
-                      "id": "SET_FLUID",
-                      "params": {
-                        "fluid": "@{final_brew}"
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "CLEAR_EFFECTS"
-        },
-        {
-          "id": "PLAY_SOUND",
+          "id": "ADD_POTION_EFFECT",
           "quickfail": "PASS",
           "params": {
-            "id": "entity.generic.splash"
+            "id": "@{potion}"
           }
         }
       ]
@@ -269,77 +134,55 @@
   },
   "recipes": {
     "potioncraft:potion_cauldron_block": {
-      "sugar": {
+      "hybrid-aquatic:mahi": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
               "potion": "swiftness"
             }
           }
         ]
       },
-      "rabbit_foot": {
+      "hybrid-aquatic:flying_fish": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
               "potion": "leaping"
             }
           }
         ]
       },
-      "glistering_melon_slice": {
+      "hybrid-aquatic:ratfish": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
-              "potion": "healing"
+              "potion": "spectral_seas:shrinking_potion"
             }
           }
         ]
       },
-      "spider_eye": {
+      "naturalist:catfish": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
-              "potion": "poison"
+              "potion": "spectral_seas:growth_potion"
             }
           }
         ]
       },
-      "pufferfish": {
+      "hybrid-aquatic:flashlight_fish": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
-            "params": {
-              "potion": "water_breathing"
-            }
-          }
-        ]
-      },
-      "magma_cream": {
-        "potency": 1,
-        "effects": [
-          {
-            "id": "${add_potion_if_witch_brew}",
-            "params": {
-              "potion": "fire_resistance"
-            }
-          }
-        ]
-      },
-      "golden_carrot": {
-        "potency": 1,
-        "effects": [
-          {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
               "potion": "night_vision"
             }
@@ -350,35 +193,35 @@
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
               "potion": "strength"
             }
           }
         ]
       },
-      "ghast_tear": {
+      "hybrid-aquatic:anemone": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
               "potion": "regeneration"
             }
           }
         ]
       },
-      "turtle_helmet": {
+      "hybrid-aquatic:stonefish": {
         "potency": 1,
         "effects": [
-          "${use_if_fluid}",
+          "${add_item_if_potato_soup}",
           {
             "id": "ADD_STATUS_EFFECT",
             "quickfail": "PASS",
             "params": {
               "id": "slowness",
               "duration": 400.0,
-              "amplifier": 4.0
+              "amplifier": 2.0
             }
           },
           {
@@ -387,69 +230,59 @@
             "params": {
               "id": "resistance",
               "duration": 400.0,
-              "amplifier": 3.0
+              "amplifier": 1.0
             }
           }
         ]
       },
-      "phantom_membrane": {
+      "hybrid-aquatic:dragonfish": {
         "potency": 1,
         "effects": [
           {
-            "id": "${add_potion_if_witch_brew}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
               "potion": "slow_falling"
             }
           }
         ]
       },
-      "moss_block": {
-        "potency": 0,
+      "hybrid-aquatic:lionfish": {
+        "potency": 1,
         "effects": [
           {
-            "id": "${add_catalyst}",
+            "id": "${add_potion_if_potato_soup}",
             "params": {
-              "own_brew": "spectral_seas:moss_brew",
-              "other_brew1": "spectral_seas:flesh_brew",
-              "combined_brew1": "spectral_seas:moss_flesh_brew",
-              "other_brew2": "spectral_seas:mushroom_brew",
-              "combined_brew2": "spectral_seas:moss_mushroom_brew",
-              "incomplete_brew": "spectral_seas:mushroom_flesh_brew",
-              "final_brew": "spectral_seas:witch_brew"
+              "potion": "poison"
             }
           }
         ]
       },
-      "rotten_flesh": {
-        "potency": 0,
+      "minecraft:ink_sac": {
+        "potency": 1,
         "effects": [
+          "${add_item_if_potato_soup}",
           {
-            "id": "${add_catalyst}",
+            "id": "ADD_STATUS_EFFECT",
+            "quickfail": "PASS",
             "params": {
-              "own_brew": "spectral_seas:flesh_brew",
-              "other_brew1": "spectral_seas:moss_brew",
-              "combined_brew1": "spectral_seas:moss_flesh_brew",
-              "other_brew2": "spectral_seas:mushroom_brew",
-              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
-              "incomplete_brew": "spectral_seas:moss_mushroom_brew",
-              "final_brew": "spectral_seas:witch_brew"
+              "id": "blindness",
+              "duration": 200.0,
+              "amplifier": 1.0
             }
           }
         ]
       },
-      "red_mushroom": {
-        "potency": 0,
+      "hybrid-aquatic:uni": {
+        "potency": 1,
         "effects": [
+          "${add_item_if_potato_soup}",
           {
-            "id": "${add_catalyst}",
+            "id": "ADD_STATUS_EFFECT",
+            "quickfail": "PASS",
             "params": {
-              "own_brew": "spectral_seas:mushroom_brew",
-              "other_brew1": "spectral_seas:moss_brew",
-              "combined_brew1": "spectral_seas:moss_mushroom_brew",
-              "other_brew2": "spectral_seas:flesh_brew",
-              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
-              "incomplete_brew": "spectral_seas:moss_flesh_brew",
-              "final_brew": "spectral_seas:witch_brew"
+              "id": "nausea",
+              "duration": 200.0,
+              "amplifier": 1.0
             }
           }
         ]
@@ -462,7 +295,8 @@
               "fluids": "spectral_seas:suspicious_chowder",
               "returned_item": "spectral_seas:suspicious_chowder",
               "sound": "item.bottle.fill",
-              "applyPotion": true
+              "applyPotion": true,
+              "min_level": 1
             }
           },
           {
@@ -476,11 +310,12 @@
           {
             "id": "${use_if_fluid}",
             "params": {
-              "fluids": "spectral_seas:witch_brew",
+              "fluids": "spectral_seas:suspicious_chowder",
               "returned_item": "tipped_arrow",
               "count": 8,
               "sound": "item.bottle.fill",
-              "applyPotion": true
+              "applyPotion": true,
+              "min_level": 1
             }
           },
           {
@@ -543,7 +378,7 @@
       }
     },
     "milk:milk_cauldron": {
-      "potato": {
+      "poisonous_potato": {
         "effects": [
           {
             "id": "HAS_LEVEL",
@@ -552,6 +387,7 @@
             }
           },
           {
+            "quickfail": "PASS",
             "id": "HAS_HEAT",
             "params": {
               "heat": 2
@@ -559,86 +395,18 @@
           },
           {
             "id": "SET_FLUID",
-            "params": {
-              "fluid": "spectral_seas:potato_soup"
-            }
-          }
-        ]
-      }
-    },
-    "minecraft:water_cauldron": {
-      "moss_block": {
-        "potency": 0,
-        "effects": [
-          {
-            "id": "${add_catalyst}",
-            "params": {
-              "own_brew": "spectral_seas:moss_brew",
-              "other_brew1": "spectral_seas:flesh_brew",
-              "combined_brew1": "spectral_seas:moss_flesh_brew",
-              "other_brew2": "spectral_seas:mushroom_brew",
-              "combined_brew2": "spectral_seas:moss_mushroom_brew",
-              "incomplete_brew": "spectral_seas:mushroom_flesh_brew",
-              "final_brew": "spectral_seas:witch_brew"
-            }
-          }
-        ]
-      },
-      "rotten_flesh": {
-        "potency": 0,
-        "effects": [
-          {
-            "id": "${add_catalyst}",
-            "params": {
-              "own_brew": "spectral_seas:flesh_brew",
-              "other_brew1": "spectral_seas:moss_brew",
-              "combined_brew1": "spectral_seas:moss_flesh_brew",
-              "other_brew2": "spectral_seas:mushroom_brew",
-              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
-              "incomplete_brew": "spectral_seas:moss_mushroom_brew",
-              "final_brew": "spectral_seas:witch_brew"
-            }
-          }
-        ]
-      },
-      "red_mushroom": {
-        "potency": 0,
-        "effects": [
-          {
-            "id": "${add_catalyst}",
-            "params": {
-              "own_brew": "spectral_seas:mushroom_brew",
-              "other_brew1": "spectral_seas:moss_brew",
-              "combined_brew1": "spectral_seas:moss_mushroom_brew",
-              "other_brew2": "spectral_seas:flesh_brew",
-              "combined_brew2": "spectral_seas:mushroom_flesh_brew",
-              "incomplete_brew": "spectral_seas:moss_flesh_brew",
-              "final_brew": "spectral_seas:witch_brew"
-            }
-          }
-        ]
-      },
-      "lapis_lazuli": {
-        "potency": 0,
-        "effects": [
-          {
-            "id": "HAS_HEAT",
-            "params": {
-              "heat": 2
-            }
-          },
-          {
-            "id": "USE_ITEM",
             "quickfail": "PASS",
             "params": {
-              "sound": "item.bottle.empty"
+              "fluid": "spectral_seas:potato_soup"
             }
           },
           {
             "id": "ADD_STATUS_EFFECT",
             "quickfail": "PASS",
             "params": {
-              "id": "spectral_seas:lapis_effect"
+              "id": "poison",
+              "duration": 150,
+              "amplifier": 3.0
             }
           }
         ]
