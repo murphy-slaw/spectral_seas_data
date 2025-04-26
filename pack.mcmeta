@@ -236,6 +236,42 @@
 		{
 			"namespace": "supplementaries",
 			"path": "worldgen/structure_set/way_signs.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure/ancient_crypt.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure_set/ancient_crypt.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure/antiquus_crypta.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure_set/antiquus_crypta.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure/underground_structures.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure_set/underground_structures.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure/lost_soul_dungeon.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure/lost_soul_city.json"
+		},
+		{
+			"namespace": "philipsruins",
+			"path": "worldgen/structure_set/lost_soul_city.json"
 		}
 	  ]
 	}
